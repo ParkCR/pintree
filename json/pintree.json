@@ -326,162 +326,132 @@
           },
           {
             "type": "folder",
-            "addDate": 1609765000610,
-            "title": "工具",
+            "addDate": 1747894651264,
+            "title": "网页",
             "children": [
               {
                 "type": "link",
-                "title": "随机打开网站",
+                "addDate": 1747894653726,
+                "title": "编辑当前页面",
                 "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){var%20a=window,b=document,c=encodeURIComponent,d=a.open(%22http://www.stumbleupon.com/url/%22+b.location,'StumbleUpOn','location=1,status=1,scrollbars=1,resizable=1,alwaysRaised=1,width=800px,height=600px');a.setTimeout(function(){d.focus()},60)})();"
+                "url": "javascript:document.body.contentEditable%20=%20'true';%20document.designMode='on';%20void%200"
               },
               {
                 "type": "link",
-                "addDate": 1727405664439,
-                "title": "网页临时记事本",
+                "addDate": 1747894743638,
+                "title": "解除网页限制",
                 "icon": "https://logo.clearbit.com/",
-                "url": "data:text/html,<body contenteditable style=line-height:1.5;font-size:20px>"
+                "url": "javascript:(function(){function e(e){e.stopPropagation(),e.stopImmediatePropagation&&e.stopImmediatePropagation()}document.querySelectorAll('*').forEach(function(t){'none'===window.getComputedStyle(t,null).getPropertyValue('user-select')&&t.style.setProperty('user-select','text','important')}),['copy','cut','contextmenu','selectstart','mousedown','mouseup','mousemove','keydown','keypress','keyup'].forEach(function(t){document.documentElement.addEventListener(t,e,{capture:!0})})})();var tempAlert=document.createElement('div');tempAlert.textContent='%E5%B7%B2%E8%A7%A3%E9%99%A4%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%EF%BC%81';var alertStyles={'min-width':'150px','margin-left':'-75px','background-color':'#3B7CF1','color':'white','text-align':'center','border-radius':'4px','padding':'%2014px','position':'fixed','z-index':'9999999','left':'50%25','top':'30px','font-size':'16px','font-family':'sans-serif'};for(var%20style%20in%20alertStyles){tempAlert.style.setProperty(style,alertStyles[style]);}document.body.appendChild(tempAlert);setTimeout(function%20(){document.body.removeChild(tempAlert);},1000);void(0);"
               },
               {
                 "type": "link",
-                "addDate": 1679036383957,
-                "title": "🔍Crx搜搜",
-                "icon": "https://logo.clearbit.com/www.youxiaohou.com",
-                "url": "https://www.youxiaohou.com/tool/install-mactype.html"
-              },
-              {
-                "type": "link",
-                "addDate": 1597772874342,
-                "title": "采集到花瓣",
+                "addDate": 1747894760865,
+                "title": "解除CSP限制",
                 "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement(%27script%27),d.id=%27huaban_script%27,d.setAttribute(%27charset%27,%27utf-8%27),d.src=%27https://huaban.com/js/widgets.min.js?%27+Math.floor(+new%20Date/1e7),b.body.appendChild(d))})(window,document,%27HUABAN_GLOBAL%27);"
+                "url": "javascript:!function e(t){function n(){}function o(e){e[i].removeChild(e)}function r(e){return[].slice.call(t.querySelectorAll(e))}function c(t){function n(){s(function(){if(!o)try{var n=t.contentDocument;n.body.childNodes.length&&(o=1,e(n))}catch(e){o=0}},100)}a[l](function(e){t['on'+e]=null});var o;n(),t.onload=n}for(var i='parentNode',l='forEach',a='contextmenu dragstart selectstart select copy beforecopy mouseup mousedown'.split(' '),u=setTimeout(n,0);u>=0;u--)clearTimeout(u);for(u=setInterval(n,1e8);u>=0;u--)clearInterval(u);var s=setTimeout;setTimeout=setInterval=n,r('script')[l](o);var m=[];r('iframe,frame')[l](function(e){m.push(e),e[i].replaceChild(t.createElement('script'),e)});var f=t.documentElement.innerHTML;t.open(),t.write('<!DOCTYPE html>'),t.close(),t.documentElement.innerHTML=f,r('script')[l](function(e){m.length&&e[i].replaceChild(m.shift(),e)}),r('*')[l](c),c(t),a[l](function(e){t.addEventListener(e,function(e){e.stopPropagation()},!0)});var p=t.createElement('style');p.innerHTML='*{-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;}',t.body.appendChild(p)}(document);alert('%E5%B7%B2%E8%A7%A3%E9%99%A4 CSP %E9%99%90%E5%88%B6%EF%BC%81');"
               },
               {
                 "type": "link",
-                "title": "查找网站RSS源",
+                "addDate": 1747894653727,
+                "title": "解除右键限制",
                 "icon": "https://logo.clearbit.com/",
-                "url": "javascript:void(d=document);void(el=d.getElementsByTagName('link'));void(g=false);for(i=0;i<el.length;i++){if(el[i].getAttribute('rel').indexOf('alternate')!=-1){ty=el[i].getAttribute('type');if(ty.indexOf('application/rss+xml')!=-1||ty.indexOf('text/xml')!=-1){g=true;h=el[i].getAttribute('href');void(location.href='http://www.feedly.com/home#subscription/feed/'+h);}}};if(!g){window.alert('Could%20not%20find%20the%20RSS%20Feed');};"
+                "url": "javascript:(function(bookmarklets)%7Bfor(var%20i=0;i%3Cbookmarklets.length;i++)%7Bvar%20code=bookmarklets%5Bi%5D.url;if(code.indexOf(%22javascript:%22)!=-1)%7Bcode=code.replace(%22javascript:%22,%22%22);eval(code)%7Delse%7Bcode=code.replace(/%5Es+%7Cs+$/g,%22%22);if(code.length%3E0)%7Bwindow.open(code)%7D%7D%7D%7D)(%5B%7Btitle:%22%E7%A0%B4%E9%99%A4%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E9%99%90%E5%88%B6%22,url:%22javascript:function%20applyWin(a)%7Bif(typeof%20a.__nnANTImm__===%5Cx22undefined%5Cx22)%7Ba.__nnANTImm__=%7B%7D;a.__nnANTImm__.evts=%5B%5Cx22mousedown%5Cx22,%5Cx22mousemove%5Cx22,%5Cx22copy%5Cx22,%5Cx22contextmenu%5Cx22%5D;a.__nnANTImm__.initANTI=function()%7Ba.__nnantiflag__=true;a.__nnANTImm__.evts.forEach(function(c,b,d)%7Ba.addEventListener(c,this.fnANTI,true)%7D,a.__nnANTImm__)%7D;a.__nnANTImm__.clearANTI=function()%7Bdelete%20a.__nnantiflag__;a.__nnANTImm__.evts.forEach(function(c,b,d)%7Ba.removeEventListener(c,this.fnANTI,true)%7D,a.__nnANTImm__);delete%20a.__nnANTImm__%7D;a.__nnANTImm__.fnANTI=function(b)%7Bb.stopPropagation();return%20true%7D;a.addEventListener(%5Cx22unload%5Cx22,function(b)%7Ba.removeEventListener(%5Cx22unload%5Cx22,arguments.callee,false);if(a.__nnantiflag__===true)%7Ba.__nnANTImm__.clearANTI()%7D%7D,false)%7Da.__nnantiflag__===true?a.__nnANTImm__.clearANTI():a.__nnANTImm__.initANTI()%7DapplyWin(top);var%20fs=top.document.querySelectorAll(%5Cx22frame,%20iframe%5Cx22);for(var%20i=0,len=fs.length;i%3Clen;i++)%7Bvar%20win=fs%5Bi%5D.contentWindow;try%7Bwin.document%7Dcatch(ex)%7Bcontinue%7DapplyWin(fs%5Bi%5D.contentWindow)%7D;void%200;%22%7D,%7Btitle:%22%E7%A0%B4%E9%99%A4%E9%80%89%E6%8B%A9%E5%A4%8D%E5%88%B6%E9%99%90%E5%88%B6%22,url:%22javascript:(function()%7Bvar%20doc=document;var%20bd=doc.body;bd.onselectstart=bd.oncopy=bd.onpaste=bd.onkeydown=bd.oncontextmenu=bd.onmousemove=bd.onselectstart=bd.ondragstart=doc.onselectstart=doc.oncopy=doc.onpaste=doc.onkeydown=doc.oncontextmenu=null;doc.onselectstart=doc.oncontextmenu=doc.onmousedown=doc.onkeydown=function%20()%7Breturn%20true;%7D;with(document.wrappedJSObject%7C%7Cdocument)%7Bonmouseup=null;onmousedown=null;oncontextmenu=null;%7Dvar%20arAllElements=document.getElementsByTagName(%5Cx27*%5Cx27);for(var%20i=arAllElements.length-1;i%3E=0;i--)%7Bvar%20elmOne=arAllElements;with(elmOne.wrappedJSObject%7C%7CelmOne)%7Bonmouseup=null;onmousedown=null;%7D%7Dvar%20head=document.getElementsByTagName(%5Cx27head%5Cx27)%5B0%5D;if(head)%7Bvar%20style=document.createElement(%5Cx27style%5Cx27);style.type=%5Cx27text/css%5Cx27;style.innerHTML=%5Cx22html,*%7B-moz-user-select:auto!important;%7D%5Cx22;head.appendChild(style);%7Dvoid(0);%7D)();%22%7D%5D)"
               },
               {
                 "type": "link",
-                "addDate": 1542959072000,
-                "title": "网页另存为PDF",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:window.open('http://www.web2pdfconvert.com/engine?curl=%27%20+%20unescape(location.href));void(0);"
-              },
-              {
-                "type": "link",
-                "title": "WP一键留言",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){document.getElementById('author').value='%E5%AD%99%E5%AE%87%E5%8D%9A%E5%AE%A2';document.getElementById('email').value='972320721@qq.com';document.getElementById%20('url').value='sunyu.me';document.getElementById('comment').value='%E6%9D%A5%E5%8F%82%E8%A7%82%E4%B8%80%E4%B8%8B%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%9B%9E%E8%AE%BF';})()"
-              },
-              {
-                "type": "link",
-                "title": "弹出软键盘",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){var%20st;st=document.createElement('script');st.charset='utf-8';st.src='https://mimace.sinaapp.com/tool/soft_keyboard/plugins/soft_keyboard.js';document.body.appendChild(st);})();"
-              },
-              {
-                "type": "link",
-                "title": "摧毁网站",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://erkie.github.com/asteroids.min.js';void(0);"
-              },
-              {
-                "type": "link",
-                "title": "网页地震",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(w,url,hasjq)%20{%20if%20(!(hasjq%20=%20w.jQuery))%20{%20var%20s%20=%20document.createElement('script');%20s.src%20=%20url;%20(document.getElementsByTagName('head')[0]%20||%20document.getElementsByTagName('body')[0]).appendChild(s);%20}%20(function%20go()%20{%20if%20(!w.jQuery)%20{%20return%20w.setTimeout(go,%20200);%20}%20var%20$%20=%20w.jQuery;%20if%20(!hasjq)%20$%20=%20$.noConflict();%20var%20$s%20=%20$('p,div,img,span,strong,em');%20(function%20shake()%20{%20$s.each(function()%20{%20if%20(this.shift)%20this.shift%20=%200;%20else%20this.shift%20=%20(2*(Math.floor(Math.random()%20*%202))%20-%201)%20*%20(Math.floor(Math.random()%20*%204));%20$(this).css('margin-left',%20this.shift);%20});%20w.setTimeout(shake,%2080);%20})();%20})();})(window,%20'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')"
-              },
-              {
-                "type": "link",
-                "title": "网站涂鸦",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:%20(function%20()%20{%20if%20(window.goggles%20&&%20window.goggles.active)%20{%20window.goggles.stop();%20}%20else%20{%20window.GOGGLE_SERVER='//dudl.us/page';%20var%20scr%20=%20document.createElement('script');%20scr.type%20=%20'text/javascript';%20scr.src%20=%20'//dudl.us/bookmarklet.js?rand=%27+Math.random();%20document.documentElement.appendChild(scr);%20}%20})();"
-              },
-              {
-                "type": "link",
-                "title": "显示当前时间",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:void((function(t){alert(t.toLocaleString()+'%20%E6%98%9F%E6%9C%9F'+(['%E5%A4%A9','%E4%B8%80','%E4%BA%8C','%E4%B8%89','%E5%9B%9B','%E4%BA%94','%E5%85%AD'])[t.getDay()])})(new%20Date()));"
-              },
-              {
-                "type": "link",
-                "title": "今年还剩多久?",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:tdy6Nb5=new%20Date();w2RtxZ=tdy6Nb5.getYear();tG82Nu=(w2RtxZ<2000)?w2RtxZ+1900:w2RtxZ;YbU7v3w=%27December%2031,%27+tG82Nu;var%20eY2FH9t=new%20Date(YbU7v3w);alert(%27Number%20of%20days%20left%20this%20year:%20%27+Math.round((eY2FH9t.getTime()-tdy6Nb5.getTime())/86400000))"
-              },
-              {
-                "type": "link",
-                "title": "查看浏览器UA",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:var%20x=navigator.userAgent;%20var%20y='%';%20for%20(var%20i=0;i<x.length;i++)%7B%20y+=x.charCodeAt(i).toString(16)+'%';%20%7D%20y=unescape(decodeURI(y.replace(/\\%$/,'')));%20alert(x+'\\n'+y);%20void(0);"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "百度网盘提取码",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:require(['function-widget-1:share/util/service/createLinkShare.js']).prototype.makePrivatePassword=function(){return%20prompt('%E8%AF%B7%E8%BE%93%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AF%86%E7%A0%81','1234')}"
-              },
-              {
-                "type": "link",
-                "title": "购物·购物党",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){var%20s%20=%20document.createElement('script');s.setAttribute('src','https://browser.gwdang.com/get.js?f=/js/gwdang_extension.js%27);document.body.appendChild(s);})();"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "购物·如意淘",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:if(typeof%20yXzyxe58==typeof%20alert)yXzyxe58();(function(){var%20d=document,s=d.createElement('script'),h=d.getElementsByTagName('head')[0],t=new%20Date();s.src='http://ruyi.etao.com/extension/bookmarklet.js?t=%27+t.getFullYear()+t.getMonth()+t.getDate();s.charset=%27utf-8%27;if(h){h.appendChild(s);}})();"
-              },
-              {
-                "type": "link",
-                "title": "购物·惠惠购物",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){var%20s%20=%20document.createElement('script');s.charset%20=%20'UTF-8';s.setAttribute('src','https://shared-https.ydstatic.com/gouwuex/ext/script/extension_3_1.js');document.body.appendChild(s);})();"
-              },
-              {
-                "type": "link",
-                "title": "Emoji表情图标",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:var%20toggleEmojiBookmarklet=function(){var%20e=%22https://johannhof.github.io/emoji-helper/bookmarklet/%22,t=document.createElement(%22div%22),o=document.createElement(%22iframe%22);o.src=e,o.style.height=%22350px%22,o.style.width=%22510px%22,o.style.border=%221px%20solid%20lightgray%22,t.style.height=%22350px%22,t.style.width=%22510px%22,t.style.boxShadow=%222px%202px%2010px%20black%22,t.style.position=%22fixed%22,t.style.left=%22calc(50%%20-%20255px)%22,t.style.top=%2210%%22;var%20l=document.createElement(%22button%22);l.style.position=%22absolute%22,l.style.height=%2230px%22,l.style.width=%2230px%22,l.style.right=%22-15px%22,l.style.top=%22-15px%22,l.style.border=%225px%20solid%20white%22,l.style.borderRadius=%2220px%22,l.style.backgroundColor=%22white%22,l.style.boxShadow=%220px%200px%201px%20black%22,l.style.backgroundImage=%22url(%22+e+%22/img/emoji/heavy_multiplication_x.png)%22,l.style.backgroundRepeat=%22no-repeat%22,l.style.backgroundPosition=%22center%22,l.style.backgroundSize=%22contain%22,l.style.cursor=%22pointer%22,l.onclick=function(){t.parentNode.removeChild(t)},t.appendChild(l),t.appendChild(o),document.body.appendChild(t)};toggleEmojiBookmarklet();"
-              },
-              {
-                "type": "link",
-                "title": "万能命令书签",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){window.open(%22https://wn.run/f/#%22+document.location.href)})()"
-              },
-              {
-                "type": "link",
-                "title": "──────────",
+                "addDate": 1747894791655,
+                "title": "───────────",
                 "icon": "https://logo.clearbit.com/separator.mayastudios.com",
                 "url": "https://separator.mayastudios.com/index.php?t=horz"
               },
               {
                 "type": "link",
-                "title": "搜索共享帐号",
+                "addDate": 1747894791655,
+                "title": "谷歌缓存查询",
                 "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){w=open(('http://www.bugmenot.com/view/'+encodeURIComponent(location.host)),'w','location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=500,height=400,modal=yes,dependent=yes');if(w){setTimeout('w.focus()',1000)}else{location='http://www.bugmenot.com/view/'+encodeURIComponent(location.host)}})();"
+                "url": "javascript:(function(){%20document.location.href='http://www.google.com/search?q=cache:%27+escape(document.location.href)%20})();"
               },
               {
                 "type": "link",
-                "title": "──────────",
+                "addDate": 1747894791655,
+                "title": "网站时光机",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:window.open('https://web.archive.org/web/*/'%20+%20unescape(location.href));void(0);"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894791656,
+                "title": "储存当前网页",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:void(open('http://archive.today/?run=1&url=%27+encodeURIComponent(document.location)))"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894805183,
+                "title": "─────────── ",
                 "icon": "https://logo.clearbit.com/separator.mayastudios.com",
                 "url": "https://separator.mayastudios.com/index.php?t=horz"
               },
               {
                 "type": "link",
-                "title": "年度进度条",
+                "addDate": 1747894835490,
+                "title": "复制选中内容",
                 "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(()=>{const%20dbNum=num=>num>9?num:%220%22+num,now=new%20Date,year=now.getFullYear(),month=dbNum(now.getMonth()+1),today=dbNum(now.getDate()),day=now.getDay(),hours=dbNum(now.getHours()),minutes=dbNum(now.getMinutes()),seconds=dbNum(now.getSeconds()),yearStart=new%20Date(year,0),yearEnd=new%20Date(year+1,0),progress=(100*(now-yearStart)/(yearEnd-yearStart)).toFixed(3);let%20progressbar=%22%22;for(let%20i=0;i%3C20;i++)progressbar+=5*i+2.5%3E=+progress?%22%E2%96%91%22:%22%E2%96%92%22;const%20dayNames=[%22Sunday%22,%22Monday%22,%22Tuesday%22,%22Wednesday%22,%22Thursday%22,%22Friday%22,%22Saturday%22],result=%22Now:%20%22+year+%22-%22+month+%22-%22+today+%22%20%22+hours+%22:%22+minutes+%22:%22+seconds+%22%20%22+dayNames[day]+%22\\nProgress:%20%22+progressbar+%22%20%22+progress+%22%%22;console.log(result);const%20copyinput=document.createElement(%22textarea%22);copyinput.value=result,document.body.appendChild(copyinput),copyinput.select();try{document.execCommand(%22copy%22),alert(result)}catch(err){}document.body.removeChild(copyinput);})()"
+                "url": "javascript:(function(){var selection=window.getSelection();var range=selection.getRangeAt(0);var div=document.createElement('div');div.appendChild(range.cloneContents());var htmlContent=div.innerHTML;var textContent=selection.toString();navigator.clipboard.write([new ClipboardItem({'text/plain':new Blob([textContent],{type:'text/plain'}),'text/html':new Blob([htmlContent],{type:'text/html'})})]).catch(function(err){});})();"
               },
               {
                 "type": "link",
-                "title": "──────────",
+                "addDate": 1747894823853,
+                "title": "复制网页 HTML",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:navigator.clipboard.writeText(decodeURIComponent('<a href=%22'+window.location+'%22>'+document.title+'</a>'));"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894653727,
+                "title": "复制网页 Markdown",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:navigator.clipboard.writeText('[' + (document.title.replace(/\\s*[-_|]\\s*[^-_|]{1,20}$/, '').replace(/_[^_]+$/, '').trim()) + '](' + decodeURIComponent(window.location.href) + ')');"
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "addDate": 1747894131513,
+            "title": "文字",
+            "children": [
+              {
+                "type": "link",
+                "addDate": 1747894157233,
+                "title": "网页便签",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){const TEXTAREA_HORIZONTAL_PADDING_BORDER=22;const INPUT_WINDOW_HORIZONTAL_PADDING=60;var overlay=document.createElement('div');overlay.style.all='initial';overlay.style.position='fixed';overlay.style.top='0';overlay.style.left='0';overlay.style.width='100%';overlay.style.height='100%';overlay.style.backgroundColor='rgba(0,0,0,0.8)';overlay.style.zIndex='999999';overlay.style.display='flex';overlay.style.justifyContent='center';overlay.style.alignItems='center';var inputWindow=document.createElement('div');inputWindow.style.fontFamily='PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif';inputWindow.style.width='600px';inputWindow.style.backgroundColor='#FFFCF6';inputWindow.style.borderRadius='8px';inputWindow.style.boxShadow='0%202px%2010px%20rgba(0,0,0,0.1)';inputWindow.style.padding='30px';inputWindow.style.position='relative';inputWindow.style.border='1px%20solid%20#CBC7BC';inputWindow.style.boxSizing='border-box';inputWindow.style.outlineOffset='-5px';var%20title=document.createElement('div');title.style.fontSize='18px';title.style.fontWeight='bold';title.style.marginBottom='20px';title.style.color='#6F594C';title.innerText='%E5%A5%B6%E9%85%AA%E4%BE%BF%E7%AD%BE';var%20titleLabel=document.createElement('div');titleLabel.style.fontSize='14px';titleLabel.style.marginBottom='5px';titleLabel.style.color='#6F594C';titleLabel.innerText='%E6%A0%87%E9%A2%98';var%20titleInput=document.createElement('input');titleInput.type='text';titleInput.style.width='100%';titleInput.style.padding='10px';titleInput.style.boxSizing='border-box';titleInput.style.border='1px%20solid%20#CBC7BC';titleInput.style.borderRadius='2px';titleInput.style.fontSize='14px';titleInput.style.backgroundColor='#fff';titleInput.style.color='#333';titleInput.style.marginBottom='15px';titleInput.placeholder='%E8%AF%B7%E8%BE%93%E5%85%A5%E6%A0%87%E9%A2%98...';titleInput.style.fontFamily='inherit';var%20contentLabel=document.createElement('div');contentLabel.style.fontSize='14px';contentLabel.style.marginBottom='5px';contentLabel.style.color='#6F594C';contentLabel.innerText='%E5%86%85%E5%AE%B9';var%20formatToolbar=document.createElement('div');formatToolbar.style.display='flex';formatToolbar.style.gap='5px';formatToolbar.style.marginBottom='5px';formatToolbar.style.padding='5px';formatToolbar.style.backgroundColor='#f5f2ee';formatToolbar.style.borderRadius='4px';formatToolbar.style.flexWrap='wrap';function%20createFormatButton(text,command,value=null,titleText=''){var%20button=document.createElement('button');button.innerText=text;button.title=titleText||command;button.style.padding='3px%208px';button.style.backgroundColor='#fff';button.style.border='1px%20solid%20#CBC7BC';button.style.borderRadius='3px';button.style.cursor='pointer';button.style.fontSize='12px';button.style.color='#6F594C';button.addEventListener('mouseover',function(){this.style.backgroundColor='#f0ece7';});button.addEventListener('mouseout',function(){this.style.backgroundColor='#fff';});button.addEventListener('click',function(e){e.preventDefault();document.execCommand(command,false,value);textarea.focus();});return%20button;}var%20boldBtn=createFormatButton('B','bold',null,'%E5%8A%A0%E7%B2%97');boldBtn.style.fontWeight='bold';var%20italicBtn=createFormatButton('I','italic',null,'%E6%96%9C%E4%BD%93');italicBtn.style.fontStyle='italic';var%20underlineBtn=createFormatButton('U','underline',null,'%E4%B8%8B%E5%88%92%E7%BA%BF');underlineBtn.style.textDecoration='underline';var%20h1Btn=createFormatButton('H1','formatBlock','%3Ch1%3E','%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98');var%20h2Btn=createFormatButton('H2','formatBlock','%3Ch2%3E','%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98');var%20h3Btn=createFormatButton('H3','formatBlock','%3Ch3%3E','%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98');var%20linkBtn=document.createElement('button');linkBtn.innerText='%E9%93%BE%E6%8E%A5';linkBtn.title='%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5';linkBtn.style.padding='3px%208px';linkBtn.style.backgroundColor='#fff';linkBtn.style.border='1px%20solid%20#CBC7BC';linkBtn.style.borderRadius='3px';linkBtn.style.cursor='pointer';linkBtn.style.fontSize='12px';linkBtn.style.color='#6F594C';linkBtn.addEventListener('mouseover',function(){this.style.backgroundColor='#f0ece7';});linkBtn.addEventListener('mouseout',function(){this.style.backgroundColor='#fff';});linkBtn.addEventListener('click',function(e){e.preventDefault();var%20url=prompt('%E8%AF%B7%E8%BE%93%E5%85%A5%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80:','https://');if(url){var%20text=window.getSelection().toString()||prompt('%E8%AF%B7%E8%BE%93%E5%85%A5%E9%93%BE%E6%8E%A5%E6%96%87%E5%AD%97:','%E9%93%BE%E6%8E%A5%E6%96%87%E5%AD%97');if(text){document.execCommand('insertHTML',false,'%3Ca%20href=%22'+url+'%22%20target=%22_blank%22%3E'+text+'%3C/a%3E');}}textarea.focus();});var%20colorBtn=document.createElement('button');colorBtn.innerText='%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2';colorBtn.title='%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2';colorBtn.style.padding='3px%208px';colorBtn.style.backgroundColor='#fff';colorBtn.style.border='1px%20solid%20#CBC7BC';colorBtn.style.borderRadius='3px';colorBtn.style.cursor='pointer';colorBtn.style.fontSize='12px';colorBtn.style.color='#6F594C';colorBtn.addEventListener('click',function(e){e.preventDefault();var%20colorInput=document.createElement('input');colorInput.type='color';colorInput.style.display='none';colorInput.oninput=function(){document.execCommand('foreColor',false,colorInput.value);textarea.focus();document.body.removeChild(colorInput);};document.body.appendChild(colorInput);colorInput.click();});var%20clearFormatBtn=createFormatButton('%E6%B8%85%E9%99%A4%E6%A0%BC%E5%BC%8F','removeFormat',null,'%E6%B8%85%E9%99%A4%E6%89%80%E6%9C%89%E6%A0%BC%E5%BC%8F');formatToolbar.appendChild(boldBtn);formatToolbar.appendChild(italicBtn);formatToolbar.appendChild(underlineBtn);formatToolbar.appendChild(h1Btn);formatToolbar.appendChild(h2Btn);formatToolbar.appendChild(h3Btn);formatToolbar.appendChild(linkBtn);formatToolbar.appendChild(colorBtn);formatToolbar.appendChild(clearFormatBtn);var%20imageInput=document.createElement('input');imageInput.type='file';imageInput.accept='image/*';imageInput.style.display='none';imageInput.onchange=function(event){textarea.focus();var%20file=event.target.files[0];if(file){var%20reader=new%20FileReader();reader.onload=function(e){var%20img='%3Cimg%20src=%22'+e.target.result+'%22%20alt=%22uploaded-image%22%20style=%22max-width:100%;display:block;margin:auto%20auto;border-radius:10px;%22%3E';document.execCommand('insertHTML',false,img);};reader.readAsDataURL(file);}};var%20insertImageBtn=document.createElement('button');insertImageBtn.innerText='%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87';insertImageBtn.title='%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87';insertImageBtn.style.padding='3px%208px';insertImageBtn.style.backgroundColor='#fff';insertImageBtn.style.border='1px%20solid%20#CBC7BC';insertImageBtn.style.borderRadius='3px';insertImageBtn.style.cursor='pointer';insertImageBtn.style.fontSize='12px';insertImageBtn.style.color='#6F594C';insertImageBtn.addEventListener('mouseover',function(){this.style.backgroundColor='#f0ece7';});insertImageBtn.addEventListener('mouseout',function(){this.style.backgroundColor='#fff';});insertImageBtn.addEventListener('click',function(e){e.preventDefault();imageInput.click();});formatToolbar.appendChild(insertImageBtn);var%20textarea=document.createElement('div');textarea.contentEditable=true;textarea.style.height='200px';textarea.style.padding='10px';textarea.style.boxSizing='border-box';textarea.style.border='1px%20solid%20#CBC7BC';textarea.style.borderRadius='2px';textarea.style.fontSize='14px';textarea.style.lineHeight='1.6';textarea.style.backgroundColor='#fff';textarea.style.color='#333';textarea.style.overflow='auto';textarea.style.fontFamily='inherit';textarea.style.outline='none';textarea.style.resize='both';textarea.style.minHeight='200px';textarea.style.width='100%';textarea.setAttribute('placeholder','%E8%AF%B7%E8%BE%93%E5%85%A5%E5%86%85%E5%AE%B9...');textarea.addEventListener('focus',function(){if(this.innerHTML==='%E8%AF%B7%E8%BE%93%E5%85%A5%E5%86%85%E5%AE%B9...'){this.innerHTML='';}});textarea.addEventListener('blur',function(){if(this.innerHTML===''){this.innerHTML='%E8%AF%B7%E8%BE%93%E5%85%A5%E5%86%85%E5%AE%B9...';}});var%20sourceInput=document.createElement('input');sourceInput.type='text';sourceInput.style.width='100%';sourceInput.style.marginTop='15px';sourceInput.style.padding='10px';sourceInput.style.boxSizing='border-box';sourceInput.style.border='1px%20solid%20#CBC7BC';sourceInput.style.borderRadius='2px';sourceInput.style.fontSize='14px';sourceInput.style.backgroundColor='#fff';sourceInput.style.color='#333';sourceInput.value='%E6%9D%A5%E8%87%AA%20%E5%A5%B6%E9%85%AA%E4%BE%BF%E7%AD%BE';sourceInput.placeholder='%E8%AF%B7%E8%BE%93%E5%85%A5%E6%9D%A5%E6%BA%90%E4%BF%A1%E6%81%AF...';sourceInput.style.fontFamily='inherit';var%20colorLabel=document.createElement('div');colorLabel.style.fontSize='14px';colorLabel.style.marginTop='15px';colorLabel.style.marginBottom='5px';colorLabel.style.color='#6F594C';colorLabel.innerText='%E9%80%89%E6%8B%A9%E6%A0%B7%E5%BC%8F';var%20colorContainer=document.createElement('div');colorContainer.style.display='flex';colorContainer.style.flexWrap='wrap';colorContainer.style.gap='10px';colorContainer.style.marginTop='10px';colorContainer.style.marginBottom='15px';var%20colorThemes=[{name:'%E5%A5%B6%E9%85%AA%E6%A3%95',primary:'#82614E',secondary:'#6F594C',text:'#7D685B',background:'#FFFCF6',border:'#CBC7BC',source:'#9F958B',buttonText:'#FDFBF1'},{name:'%E6%9A%97%E5%A4%9C%E9%BB%91',primary:'#444444',secondary:'#333333',text:'#555555',background:'#F5F5F5',border:'#DDDDDD',source:'#999999',buttonText:'#FFFFFF'},{name:'%E7%BA%AF%E6%B4%81%E7%99%BD',primary:'#000000',secondary:'#000000',text:'#555555',background:'#FFFFFF',border:'#DDDDDD',source:'#777777',buttonText:'#FFFFFF'},{name:'%E5%B0%8F%E7%B1%B3%E8%93%9D',primary:'#4E71A2',secondary:'#3A5683',text:'#4E71A2',background:'#F0F5FC',border:'#C7D4E8',source:'#8B9CB3',buttonText:'#FFFFFF'},{name:'%E6%A3%AE%E6%9E%97%E7%BB%BF',primary:'#3E7C5F',secondary:'#2A6A4C',text:'#3E7C5F',background:'#F0F9F5',border:'#C7E5D8',source:'#8BAB9A',buttonText:'#FFFFFF'},{name:'%E6%A8%B1%E8%8A%B1%E7%B2%89',primary:'#A83C5C',secondary:'#A83C5C',text:'#A83C5C',background:'#FFF0F5',border:'#F2D1DD',source:'#D9A6B8',buttonText:'#FFFFFF'},{name:'%E6%A9%99%E9%98%B3%E6%A9%99',primary:'#9F5717',secondary:'#9F5717',text:'#9F5717',background:'#FFF8F0',border:'#F9DAC0',source:'#E0B088',buttonText:'#FFFFFF'}];var%20selectedTheme=colorThemes[0];var%20borderOptionContainer=document.createElement('div');borderOptionContainer.style.display='flex';borderOptionContainer.style.alignItems='center';borderOptionContainer.style.marginLeft='auto';borderOptionContainer.style.marginBottom='auto';var%20borderSelect=document.createElement('select');borderSelect.id='note-border-select';borderSelect.style.fontSize='14px';borderSelect.style.color='#6F594C';borderSelect.style.marginLeft='6px';borderSelect.style.borderRadius='4px';borderSelect.style.padding='5px%2010px';borderSelect.style.width='120px';borderSelect.style.border='1px%20solid%20'+selectedTheme.border;var%20optionNone=document.createElement('option');optionNone.value='none';optionNone.innerText='%E6%97%A0%E8%BE%B9%E6%A1%86';borderSelect.appendChild(optionNone);var%20optionBorder=document.createElement('option');optionBorder.value='border';optionBorder.innerText='%E7%9B%B4%E8%A7%92%E8%BE%B9%E6%A1%86';borderSelect.appendChild(optionBorder);var%20optionBorderRadius=document.createElement('option');optionBorderRadius.value='border-radius';optionBorderRadius.innerText='%E5%9C%86%E8%A7%92%E8%BE%B9%E6%A1%86';borderSelect.appendChild(optionBorderRadius);borderOptionContainer.appendChild(borderSelect);var%20closeInputBtn=document.createElement('div');closeInputBtn.style.position='absolute';closeInputBtn.style.top='10px';closeInputBtn.style.right='10px';closeInputBtn.style.width='24px';closeInputBtn.style.height='24px';closeInputBtn.style.borderRadius='50%';closeInputBtn.style.color=selectedTheme.primary;closeInputBtn.style.display='flex';closeInputBtn.style.justifyContent='center';closeInputBtn.style.alignItems='center';closeInputBtn.style.cursor='pointer';closeInputBtn.style.fontSize='16px';closeInputBtn.style.fontFamily='sans-serif';closeInputBtn.innerHTML='%E2%9C%95';closeInputBtn.addEventListener('mouseover',function(){this.style.backgroundColor='#eee';});closeInputBtn.addEventListener('mouseout',function(){this.style.backgroundColor='transparent';});var%20generateButton=document.createElement('button');generateButton.style.padding='8px%2015px';generateButton.style.backgroundColor=selectedTheme.primary;generateButton.style.border='1px%20solid%20'+selectedTheme.border;generateButton.style.borderRadius='4px';generateButton.style.cursor='pointer';generateButton.style.fontSize='14px';generateButton.style.color=selectedTheme.buttonText;generateButton.innerText='%E7%94%9F%E6%88%90%E7%AC%94%E8%AE%B0';generateButton.style.fontFamily='inherit';function%20updatePanelColors(theme){inputWindow.style.backgroundColor=theme.background;inputWindow.style.border='1px%20solid%20'+theme.border;title.style.color=theme.secondary;titleLabel.style.color=theme.secondary;contentLabel.style.color=theme.secondary;colorLabel.style.color=theme.secondary;closeInputBtn.style.color=theme.primary;generateButton.style.backgroundColor=theme.primary;generateButton.style.color=theme.buttonText;generateButton.style.border='1px%20solid%20'+theme.border;titleInput.style.border='1px%20solid%20'+theme.border;textarea.style.border='1px%20solid%20'+theme.border;imageInput.style.border='1px%20solid%20'+theme.border;sourceInput.style.border='1px%20solid%20'+theme.border;formatToolbar.style.backgroundColor=theme.background;}colorThemes.forEach(function(theme,index){var%20colorOption=document.createElement('div');colorOption.style.width='24px';colorOption.style.height='24px';colorOption.style.backgroundColor=theme.primary;colorOption.style.borderRadius='50%';colorOption.style.cursor='pointer';colorOption.style.border='2px%20solid%20'+(index===0?'#000':'transparent');colorOption.setAttribute('data-index',index);colorOption.addEventListener('click',function(){var%20idx=parseInt(this.getAttribute('data-index'));selectedTheme=colorThemes[idx];document.querySelectorAll('[data-index]').forEach(function(el){el.style.border='2px%20solid%20transparent';});this.style.border='2px%20solid%20#000';updatePanelColors(selectedTheme);});colorContainer.appendChild(colorOption);});var%20buttonContainer=document.createElement('div');buttonContainer.style.display='flex';buttonContainer.style.justifyContent='center';buttonContainer.style.marginTop='20px';let%20textareaResizeObserver=null;let%20previousTextareaContentWidth=-1;const%20cleanupAndRemoveOverlay=function(){if(textareaResizeObserver){textareaResizeObserver.disconnect();textareaResizeObserver=null;}if(overlay&&overlay.parentNode===document.body){document.body.removeChild(overlay);}};closeInputBtn.onclick=cleanupAndRemoveOverlay;generateButton.onclick=function(){var%20titleText=titleInput.value.trim();var%20inputText=textarea.innerHTML.trim();if(!inputText||inputText==='%E8%AF%B7%E8%BE%93%E5%85%A5%E5%86%85%E5%AE%B9...'){alert('%E8%AF%B7%E8%BE%93%E5%85%A5%E7%AC%94%E8%AE%B0%E5%86%85%E5%AE%B9%EF%BC%81');return;}var%20sourceText=sourceInput.value.trim();var%20borderOption=borderSelect.value;if(textareaResizeObserver){textareaResizeObserver.disconnect();textareaResizeObserver=null;}if(overlay&&overlay.parentNode===document.body){document.body.removeChild(overlay);}createNoteCardAndSave(titleText,inputText,sourceText,selectedTheme,borderOption);};buttonContainer.appendChild(generateButton);inputWindow.appendChild(closeInputBtn);inputWindow.appendChild(title);inputWindow.appendChild(titleLabel);inputWindow.appendChild(titleInput);inputWindow.appendChild(contentLabel);inputWindow.appendChild(formatToolbar);inputWindow.appendChild(textarea);inputWindow.appendChild(imageInput);inputWindow.appendChild(sourceInput);inputWindow.appendChild(colorLabel);var%20colorAndBorderRow=document.createElement('div');colorAndBorderRow.style.display='flex';colorAndBorderRow.style.alignItems='center';colorAndBorderRow.style.gap='20px';colorAndBorderRow.appendChild(colorContainer);colorAndBorderRow.appendChild(borderOptionContainer);inputWindow.appendChild(colorAndBorderRow);inputWindow.appendChild(buttonContainer);overlay.appendChild(inputWindow);document.body.appendChild(overlay);if(window.ResizeObserver){textareaResizeObserver=new%20ResizeObserver(entries=%3E{for(let%20entry%20of%20entries){if(entry.target===textarea){const%20newTextareaContentWidth=entry.contentRect.width;if(previousTextareaContentWidth===-1){previousTextareaContentWidth=newTextareaContentWidth;}else%20if(newTextareaContentWidth!==previousTextareaContentWidth){previousTextareaContentWidth=newTextareaContentWidth;const%20currentTextareaOffsetWidth=newTextareaContentWidth+TEXTAREA_HORIZONTAL_PADDING_BORDER;const%20newInputWindowWidth=currentTextareaOffsetWidth+INPUT_WINDOW_HORIZONTAL_PADDING;inputWindow.style.width=newInputWindowWidth+'px';}}}});textareaResizeObserver.observe(textarea);}function%20createNoteCardAndSave(titleText,text,sourceText,theme,borderOption){var%20tempDiv=document.createElement('div');tempDiv.style.position='absolute';tempDiv.style.top='-9999px';tempDiv.style.left='-9999px';tempDiv.style.width='600px';tempDiv.style.backgroundColor=theme.background;document.body.appendChild(tempDiv);var%20card=document.createElement('div');card.style.width='540px';card.style.backgroundColor=theme.background;card.style.borderRadius='2px';card.style.boxShadow='0%202px%2010px%20rgba(0,0,0,0.1)';card.style.padding='30px';card.style.position='relative';card.id='trae-ai-smartisan-note-card';card.style.boxSizing='border-box';card.style.minHeight='540px';var%20contentWrapper=document.createElement('div');contentWrapper.style.padding='30px%2030px%200px';contentWrapper.style.position='relative';contentWrapper.style.boxSizing='border-box';contentWrapper.style.backgroundColor=theme.background;contentWrapper.style.minHeight='420px';contentWrapper.style.fontFamily='PingFang%20SC,%20Hiragino%20Sans%20GB,%20Microsoft%20YaHei,%20sans-serif';if(borderOption==='border'){contentWrapper.style.border='1px%20solid%20'+theme.border;contentWrapper.style.borderRadius='0px';}else%20if(borderOption==='border-radius'){contentWrapper.style.border='1px%20solid%20'+theme.border;contentWrapper.style.backgroundColor='#fff';contentWrapper.style.borderRadius='10px';}else{contentWrapper.style.border='none';contentWrapper.style.borderBottom='1px%20solid%20'+theme.border;contentWrapper.style.borderRadius='0px';}if(titleText){var%20titleElement=document.createElement('div');titleElement.style.fontSize='30px';titleElement.style.fontWeight='bold';titleElement.style.marginBottom='40px';titleElement.style.color=theme.secondary;titleElement.innerText=titleText;contentWrapper.appendChild(titleElement);}var%20content=document.createElement('div');content.style.color=theme.text;content.style.fontSize='20px';content.style.lineHeight='1.5';content.style.letterSpacing='0.05em';content.style.textAlign='justify';content.style.wordBreak='break-word';content.style.marginBottom='60px';content.style.fontWeight='normal';content.style.fontFamily='PingFang%20SC,%20Hiragino%20Sans%20GB,%20Microsoft%20YaHei,%20sans-serif';content.innerHTML=text;contentWrapper.appendChild(content);card.appendChild(contentWrapper);var%20source=document.createElement('div');source.style.marginTop='30px';source.style.fontSize='16px';source.style.color=theme.source;source.style.display='flex';source.style.justifyContent='center';source.style.alignItems='center';source.style.fontWeight='normal';source.style.fontFamily='PingFang%20SC,%20Hiragino%20Sans%20GB,%20Microsoft%20YaHei,%20sans-serif';source.innerHTML='%3Cdiv%20style=%22color:'+theme.source+';%22%3E'+sourceText+'%3C/div%3E';card.appendChild(source);tempDiv.appendChild(card);if(!window.html2canvas){var%20script=document.createElement('script');script.src='https://html2canvas.hertzen.com/dist/html2canvas.min.js';script.onload=function(){captureAndSave(card.id,theme);};document.head.appendChild(script);}else{captureAndSave(card.id,theme);}}function%20captureAndSave(cardId,theme){var%20cardElement=document.getElementById(cardId);var%20tempDiv=cardElement.parentNode;html2canvas(cardElement,{allowTaint:true,useCORS:true,backgroundColor:theme.background,scale:2,logging:false}).then(function(canvas){var%20link=document.createElement('a');link.download=(titleInput.value.trim()||'%E7%AC%94%E8%AE%B0%E5%8D%A1%E7%89%87')+'.png';link.href=canvas.toDataURL('image/png');link.click();if(tempDiv&&tempDiv.parentNode){tempDiv.parentNode.removeChild(tempDiv);}}).catch(function(error){console.error('%E6%88%AA%E5%9B%BE%E5%A4%B1%E8%B4%A5%EF%BC%9A',error);if(tempDiv&&tempDiv.parentNode){tempDiv.parentNode.removeChild(tempDiv);}});}})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894183264,
+                "title": "网页笔记",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var d=document;if(d.getElementById('web-note-container'))return;var hostElement=d.createElement('div');hostElement.id='web-note-host';hostElement.style.cssText='position:fixed;top:0;left:0;z-index:9999;';d.body.appendChild(hostElement);var shadowRoot=hostElement.attachShadow({mode:'closed'});var s=d.createElement('style');s.textContent='#web-note-container{position:fixed;top:20%;right:15%;width:300px;height:500px;background:#fff;border:1px%20solid%20#ddd;box-shadow:0%200%2010px%20rgba(0,0,0,0.2);z-index:9999;border-radius:10px;overflow:hidden;font-family:Arial,sans-serif;resize:both;}#web-note-header{background:#f8e8c0;padding:8px;cursor:move;border-bottom:1px%20solid%20#f0d890;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;}#web-note-title{font-weight:bold;margin:0;font-size:14px;color:#8a6d3b;cursor:pointer;}#web-note-buttons{display:flex;gap:6px;}#web-note-save,#web-note-close{cursor:pointer;font-size:12px;background:none;border:none;padding:2px%205px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:transparent%20!important;text-shadow:0%200%200%20#8a6d3b%20!important;-webkit-text-fill-color:transparent%20!important;}#web-note-save:hover{background:#FFFDF7;}#web-note-close:hover{background:#FFFDF7;}#web-note-content{width:100%;height:calc(100%%20-%2037px);border:none;resize:none;padding:10px;box-sizing:border-box;font-size:14px;outline:none;background:#FFFDF7;overflow:auto;position:relative;z-index:2;white-space:pre-wrap;word-wrap:break-word;}#web-note-content%20a{color:#0066cc;text-decoration:underline;}#web-note-content%20img{max-width:100%;height:auto;display:block;margin:8px%200;}#web-note-content%20h1{font-size:22px;}#web-note-resize{position:absolute;bottom:0;right:0;width:15px;height:15px;cursor:nwse-resize;}';shadowRoot.appendChild(s);var%20c=d.createElement('div');c.id='web-note-container';c.innerHTML='%3Cdiv%20id=%22web-note-header%22%3E%3Cdiv%20id=%22web-note-title%22%3E%E2%96%BC%20%E7%BD%91%E9%A1%B5%E7%AC%94%E8%AE%B0%3C/div%3E%3Cdiv%20id=%22web-note-buttons%22%3E%3Cbutton%20id=%22web-note-save%22%20title=%22%E4%BF%9D%E5%AD%98%E5%B9%B6%E5%85%B3%E9%97%AD%22%3E%E2%9D%A4%EF%B8%8F%3C/button%3E%3Cbutton%20id=%22web-note-close%22%20title=%22%E9%9A%90%E8%97%8F%22%3E%E2%9D%8C%EF%B8%8F%3C/button%3E%3C/div%3E%3C/div%3E%3Cdiv%20id=%22web-note-content%22%20contenteditable=%22true%22%20placeholder=%22%E5%9C%A8%E8%BF%99%E9%87%8C%E8%BE%93%E5%85%A5%E6%82%A8%E7%9A%84%E7%AC%94%E8%AE%B0...%22%3E%3C/div%3E';shadowRoot.appendChild(c);var%20container=shadowRoot.getElementById('web-note-container'),header=shadowRoot.getElementById('web-note-header'),content=shadowRoot.getElementById('web-note-content'),closeBtn=shadowRoot.getElementById('web-note-close'),saveBtn=shadowRoot.getElementById('web-note-save'),titleElement=shadowRoot.getElementById('web-note-title');var%20storageKey='webNote_'+window.location.href;var%20savedContent=localStorage.getItem(storageKey);if(savedContent){content.innerHTML=savedContent;}function%20saveToLocalStorage(){localStorage.setItem(storageKey,content.innerHTML);}content.addEventListener('input',saveToLocalStorage);content.addEventListener('focus',function(){if(content.innerHTML===''){content.innerHTML='';}});content.addEventListener('blur',function(){if(content.innerHTML===''){content.innerHTML='';}});if(content.innerHTML===''){content.innerHTML='';}content.addEventListener('keydown',function(e){e.stopPropagation();},true);content.addEventListener('keyup',function(e){e.stopPropagation();},true);content.addEventListener('keypress',function(e){e.stopPropagation();},true);var%20isDragging=false,offsetX=0,offsetY=0;header.addEventListener('mousedown',function(e){if(e.target===header||(e.target.id==='web-note-title'%20&&%20e.detail===1)){isDragging=true;offsetX=e.clientX-container.getBoundingClientRect().left;offsetY=e.clientY-container.getBoundingClientRect().top;content.style.pointerEvents='none';}});d.addEventListener('mousemove',function(e){if(isDragging){container.style.left=(e.clientX-offsetX)+'px';container.style.top=(e.clientY-offsetY)+'px';}});d.addEventListener('mouseup',function(){if(isDragging){isDragging=false;content.style.pointerEvents='auto';}});closeBtn.addEventListener('click',function(){hostElement.style.display='none';});content.addEventListener('paste',function(e){e.preventDefault();var%20text='';if(e.clipboardData||window.clipboardData){text=(e.clipboardData||window.clipboardData).getData('text/html')||'';if(!text){text=(e.clipboardData||window.clipboardData).getData('text/plain')||'';}if(text){var%20tempDiv=d.createElement('div');tempDiv.innerHTML=text;cleanupNode(tempDiv);d.execCommand('insertHTML',false,tempDiv.innerHTML);saveToLocalStorage();}}});function%20cleanupNode(node){if(!node)return;var%20children=Array.from(node.childNodes);for(var%20i=0;i%3Cchildren.length;i++){var%20child=children[i];if(child.nodeType===1){child.removeAttribute('style');child.removeAttribute('class');child.removeAttribute('id');child.removeAttribute('width');child.removeAttribute('height');var%20tagName=child.tagName.toLowerCase();if(tagName!=='a'&&tagName!=='img'&&tagName!=='b'&&tagName!=='strong'&&tagName!=='i'&&tagName!=='em'&&tagName!=='u'&&tagName!=='h1'&&tagName!=='h2'&&tagName!=='h3'&&tagName!=='h4'&&tagName!=='h5'&&tagName!=='h6'&&tagName!=='p'&&tagName!=='br'&&tagName!=='hr'&&tagName!=='ul'&&tagName!=='ol'&&tagName!=='li'&&tagName!=='blockquote'&&tagName!=='code'&&tagName!=='pre'&&tagName!=='div'&&tagName!=='span'){var%20wrapper=d.createElement('span');while(child.firstChild){wrapper.appendChild(child.firstChild);}child.parentNode.replaceChild(wrapper,child);child=wrapper;}cleanupNode(child);}else%20if(child.nodeType===3){}}};saveBtn.addEventListener('click',function(){var%20noteContent=content.innerHTML.trim();if(noteContent!==''){var%20tempDiv=d.createElement('div');tempDiv.innerHTML=noteContent;var%20markdownContent=convertToMarkdown(tempDiv);if(!markdownContent||markdownContent.trim()===''){markdownContent=content.textContent||'';}var%20pageTitle=document.title||'%E7%BD%91%E9%A1%B5%E7%AC%94%E8%AE%B0';var%20safeFileName=getSafeFileName(pageTitle);var%20blob=new%20Blob([markdownContent],{type:'text/markdown'});var%20a=d.createElement('a');a.href=URL.createObjectURL(blob);a.download=safeFileName+'.md';a.style.display='none';d.body.appendChild(a);a.click();d.body.removeChild(a);localStorage.removeItem(storageKey);d.body.removeChild(hostElement);}else{alert('%E7%AC%94%E8%AE%B0%E5%86%85%E5%AE%B9%E4%B8%BA%E7%A9%BA%EF%BC%8C%E6%97%A0%E9%9C%80%E4%BF%9D%E5%AD%98%EF%BC%81');localStorage.removeItem(storageKey);d.body.removeChild(hostElement);}});function%20getSafeFileName(str){var%20safeStr=str.replace(/[\\\\/:*?%22%3C%3E|]/g,'_');if(safeStr.length%3E100){safeStr=safeStr.substring(0,100);}return%20safeStr.trim()||'%E7%BD%91%E9%A1%B5%E7%AC%94%E8%AE%B0_'+new%20Date().toISOString().slice(0,10);}function%20convertToMarkdown(node){var%20markdown='';processNodeForMarkdown(node);if(!markdown||markdown.trim()===''){markdown=node.textContent||'';}return%20markdown;function%20processNodeForMarkdown(node){if(node.nodeType===3){markdown+=node.textContent;}else%20if(node.nodeType===1){var%20nodeName=node.nodeName.toLowerCase();if(nodeName==='a'){markdown+='['+node.textContent+']('+node.href+')';}else%20if(nodeName==='b'||nodeName==='strong'){markdown+='**'+getTextContent(node)+'**';}else%20if(nodeName==='i'||nodeName==='em'){markdown+='*'+getTextContent(node)+'*';}else%20if(nodeName==='u'){markdown+='%3Cu%3E'+getTextContent(node)+'%3C/u%3E';}else%20if(nodeName==='img'){var%20alt=node.alt||'';var%20src=node.src||'';markdown+='!['+alt+']('+src+')';}else%20if(nodeName==='h1'){markdown+='#%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='h2'){markdown+='##%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='h3'){markdown+='###%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='h4'){markdown+='####%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='h5'){markdown+='#####%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='h6'){markdown+='######%20'+getTextContent(node)+'\\n\\n';}else%20if(nodeName==='p'){for(var%20i=0;i%3Cnode.childNodes.length;i++){processNodeForMarkdown(node.childNodes[i]);}markdown+='\\n\\n';}else%20if(nodeName==='br'){markdown+='\\n';}else%20if(nodeName==='hr'){markdown+='\\n---\\n';}else%20if(nodeName==='ul'){markdown+='\\n';for(var%20i=0;i%3Cnode.childNodes.length;i++){if(node.childNodes[i].nodeName.toLowerCase()==='li'){markdown+='-%20';processNodeForMarkdown(node.childNodes[i]);markdown+='\\n';}}markdown+='\\n';}else%20if(nodeName==='ol'){markdown+='\\n';var%20counter=1;for(var%20i=0;i%3Cnode.childNodes.length;i++){if(node.childNodes[i].nodeName.toLowerCase()==='li'){markdown+=counter+'.%20';processNodeForMarkdown(node.childNodes[i]);markdown+='\\n';counter++;}}markdown+='\\n';}else%20if(nodeName==='blockquote'){markdown+='%3E%20'+getTextContent(node).replace(/\\n/g,'\\n%3E%20')+'\\n\\n';}else%20if(nodeName==='code'||nodeName==='pre'){markdown+='%60'+getTextContent(node)+'%60';}else%20if(nodeName==='div'){for(var%20i=0;i%3Cnode.childNodes.length;i++){processNodeForMarkdown(node.childNodes[i]);}if(node.nextSibling){markdown+='\\n\\n';}}else{for(var%20i=0;i%3Cnode.childNodes.length;i++){processNodeForMarkdown(node.childNodes[i]);}}}}function%20getTextContent(node){var%20text='';for(var%20i=0;i%3Cnode.childNodes.length;i++){if(node.childNodes[i].nodeType===3){text+=node.childNodes[i].textContent;}else%20if(node.childNodes[i].nodeType===1){text+=getTextContent(node.childNodes[i]);}}return%20text;}};var%20lastEscTime=0;d.addEventListener('keydown',function(e){if(e.key==='Escape'){var%20now=new%20Date().getTime();if(now-lastEscTime%3C300){hostElement.style.display='none';}lastEscTime=now;}});})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894194950,
+                "title": "网页保存",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var isSelecting=false;var selectedElement=null;function addStyle(css){const style=document.createElement('style');style.textContent=css;document.head.appendChild(style);}addStyle(`#h2m-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:99998;pointer-events:none;}#h2m-highlighter{position:absolute;border:2px%20solid%20#4481E3;background-color:rgba(63,127,234,0.1);pointer-events:none;z-index:99999;}%60);function%20htmlToMarkdown(element){let%20result='';function%20processNode(node,indent=''){if(node.nodeType===3){return%20node.textContent.replace(/\\s+/g,'%20');}if(node.nodeType!==1){return%20'';}let%20content='';const%20nodeName=node.nodeName.toLowerCase();if(nodeName==='h1'||nodeName==='h2'||nodeName==='h3'||nodeName==='h4'||nodeName==='h5'||nodeName==='h6'){const%20level=nodeName.charAt(1);const%20text=getTextContent(node);return%20'#'.repeat(parseInt(level))+'%20'+text+'\\n\\n';}else%20if(nodeName==='p'){const%20text=processChildNodes(node);return%20text+'\\n\\n';}else%20if(nodeName==='br'){return%20'\\n';}else%20if(nodeName==='hr'){return%20'---\\n\\n';}else%20if(nodeName==='ul'){let%20listContent='';Array.from(node.children).forEach(item=%3E{if(item.nodeName.toLowerCase()==='li'){listContent+='-%20'+processChildNodes(item)+'\\n';}});return%20listContent+'\\n';}else%20if(nodeName==='ol'){let%20listContent='';Array.from(node.children).forEach((item,index)=%3E{if(item.nodeName.toLowerCase()==='li'){listContent+=%60${index+1}.%20%60+processChildNodes(item)+'\\n';}});return%20listContent+'\\n';}else%20if(nodeName==='blockquote'){const%20text=processChildNodes(node);return%20'%3E%20'+text.replace(/\\n/g,'\\n%3E%20')+'\\n\\n';}else%20if(nodeName==='pre'){const%20text=node.textContent;return%20'%60%60%60\\n'+text+'\\n%60%60%60\\n\\n';}else%20if(nodeName==='code'){const%20text=node.textContent;return%20'%60'+text+'%60';}else%20if(nodeName==='strong'||nodeName==='b'){const%20text=processChildNodes(node);return%20'**'+text+'**';}else%20if(nodeName==='em'||nodeName==='i'){const%20text=processChildNodes(node);return%20'*'+text+'*';}else%20if(nodeName==='a'){const%20href=node.getAttribute('href')||'';const%20text=processChildNodes(node);return%20'['+text+']('+href+')';}else%20if(nodeName==='img'){const%20src=node.getAttribute('src')||'';const%20alt=node.getAttribute('alt')||'';return%20'!['+alt+']('+src+')';}else%20if(nodeName==='table'){let%20tableContent='';const%20rows=node.querySelectorAll('tr');if(rows.length%3E0){const%20headerRow=rows[0];const%20headerCells=headerRow.querySelectorAll('th,td');let%20headerContent='|';let%20separatorRow='|';headerCells.forEach(cell=%3E{headerContent+='%20'+getTextContent(cell)+'%20|';separatorRow+='%20---%20|';});tableContent+=headerContent+'\\n'+separatorRow+'\\n';for(let%20i=1;i%3Crows.length;i++){const%20row=rows[i];const%20cells=row.querySelectorAll('td');let%20rowContent='|';cells.forEach(cell=%3E{rowContent+='%20'+getTextContent(cell)+'%20|';});tableContent+=rowContent+'\\n';}}return%20tableContent+'\\n';}else{return%20processChildNodes(node);}}function%20processChildNodes(node){let%20content='';Array.from(node.childNodes).forEach(child=%3E{content+=processNode(child);});return%20content;}function%20getTextContent(node){let%20text='';Array.from(node.childNodes).forEach(child=%3E{if(child.nodeType===3){text+=child.textContent.replace(/\\s+/g,'%20');}else%20if(child.nodeType===1){const%20nodeName=child.nodeName.toLowerCase();if(nodeName!=='script'&&nodeName!=='style'){text+=getTextContent(child);}}});return%20text.trim();}return%20processNode(element);}function%20downloadMarkdown(markdown){const%20metadata=%60---\\ntitle:%20${document.title}\\nurl:%20${window.location.href}\\ndate:%20${new%20Date().toISOString()}\\n---\\n\\n%60;const%20fullMarkdown=metadata+markdown;var%20blob=new%20Blob([fullMarkdown],{type:'text/markdown'});var%20url=URL.createObjectURL(blob);var%20a=document.createElement('a');a.href=url;a.download=%60${document.title.replace(/[\\\\/:*?%22%3C%3E|]/g,'_')}.md%60;a.click();}function%20createSelector(){var%20overlay=document.createElement('div');overlay.id='h2m-overlay';document.body.appendChild(overlay);var%20highlighter=document.createElement('div');highlighter.id='h2m-highlighter';document.body.appendChild(highlighter);isSelecting=true;document.addEventListener('mousemove',highlightElement,true);document.addEventListener('click',selectElement,true);document.addEventListener('keydown',handleKeyNavigation,true);document.addEventListener('wheel',handleWheel,{passive:false,capture:true});document.addEventListener('mousedown',preventDefaultForSelection,true);}function%20highlightElement(e){if(!isSelecting)return;try{e.preventDefault();e.stopPropagation();var%20element=document.elementFromPoint(e.clientX,e.clientY);if(!element)return;if(element.id==='h2m-overlay'||element.id==='h2m-highlighter'){return;}const%20isWeibo=window.location.hostname.includes('weibo');if(isWeibo){const%20feedItem=element.closest('.Feed_body_3R4Tg')||element.closest('.card-wrap')||element.closest('.WB_feed_detail');if(feedItem){element=feedItem;}}selectedElement=element;updateHighlighter(element);}catch(err){console.error('%E9%80%89%E6%8B%A9%E5%85%83%E7%B4%A0%E6%97%B6%E5%87%BA%E9%94%99:',err);}}function%20updateHighlighter(element){var%20highlighter=document.getElementById('h2m-highlighter');if(!highlighter||!element)return;var%20rect=element.getBoundingClientRect();highlighter.style.top=rect.top+window.scrollY+'px';highlighter.style.left=rect.left+window.scrollX+'px';highlighter.style.width=rect.width+'px';highlighter.style.height=rect.height+'px';}function%20selectElement(e){if(!isSelecting)return;try{e.preventDefault();e.stopPropagation();if(selectedElement){stopSelection();var%20markdown=htmlToMarkdown(selectedElement);downloadMarkdown(markdown);}}catch(err){console.error('%E4%BF%9D%E5%AD%98%E5%85%83%E7%B4%A0%E6%97%B6%E5%87%BA%E9%94%99:',err);}}function%20handleKeyNavigation(e){if(!isSelecting||!selectedElement)return;if(e.key==='Escape'){e.preventDefault();stopSelection();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();switch(e.key){case'ArrowUp':if(selectedElement.parentElement&&selectedElement.parentElement!==document.body){selectedElement=selectedElement.parentElement;}break;case'ArrowDown':if(selectedElement.children.length%3E0){selectedElement=selectedElement.children[0];}break;case'ArrowLeft':if(selectedElement.previousElementSibling){selectedElement=selectedElement.previousElementSibling;}break;case'ArrowRight':if(selectedElement.nextElementSibling){selectedElement=selectedElement.nextElementSibling;}break;}updateHighlighter(selectedElement);}}function%20handleWheel(e){if(!isSelecting||!selectedElement)return;e.preventDefault();if(e.deltaY%3C0){if(selectedElement.parentElement&&selectedElement.parentElement!==document.body){selectedElement=selectedElement.parentElement;updateHighlighter(selectedElement);}}else{if(selectedElement.children.length%3E0){selectedElement=selectedElement.children[0];updateHighlighter(selectedElement);}}}function%20preventDefaultForSelection(e){if(isSelecting){e.preventDefault();e.stopPropagation();}}function%20stopSelection(){isSelecting=false;document.removeEventListener('mousemove',highlightElement,true);document.removeEventListener('click',selectElement,true);document.removeEventListener('keydown',handleKeyNavigation,true);document.removeEventListener('wheel',handleWheel,true);document.removeEventListener('mousedown',preventDefaultForSelection,true);var%20overlay=document.getElementById('h2m-overlay');var%20highlighter=document.getElementById('h2m-highlighter');if(overlay)overlay.remove();if(highlighter)highlighter.remove();}createSelector();})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894207768,
+                "title": "网页总结",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){navigator.clipboard.writeText(window.location.href+'\\n'+'%E8%AF%B7%E8%BF%94%E5%9B%9E%E6%82%A8%E4%BB%94%E7%BB%86%E9%98%85%E8%AF%BB%E6%AD%A3%E6%96%87%E5%90%8E%E7%B2%BE%E5%BF%83%E5%86%99%E6%88%90%E7%9A%84%E8%AF%A6%E5%B0%BD%E7%AC%94%E8%AE%B0');var previousAlert=document.getElementById('clipboard-alert');if(previousAlert){clearTimeout(previousAlert.timeoutId);document.body.removeChild(previousAlert);}var tempAlert=document.createElement('div');tempAlert.id='clipboard-alert';tempAlert.textContent='%E5%B7%B2%E5%A4%8D%E5%88%B6%E5%BD%93%E5%89%8D%E7%BD%91%E9%A1%B5%E5%9C%B0%E5%9D%80%EF%BC%81';var alertStyles={'min-width':'150px','margin-left':'-75px','background-color':'#3B7CF1','color':'white','text-align':'center','border-radius':'4px','padding':'14px','position':'fixed','z-index':'9999999','left':'50%25','top':'30px','font-size':'16px','font-family':'sans-serif'};for(var%20style%20in%20alertStyles){tempAlert.style.setProperty(style,alertStyles[style]);}document.body.appendChild(tempAlert);tempAlert.timeoutId=setTimeout(function(){document.body.removeChild(tempAlert);},1000);var%20frame=document.createElement('iframe');frame.setAttribute('id','sidebarView');var%20hrefs={'https://kimi.moonshot.cn/':'Kimi','https://www.doubao.com/chat/':'%E8%B1%86%E5%8C%85','https://tongyi.aliyun.com/qianwen':'%E9%80%9A%E4%B9%89','https://chat.deepseek.com/':'DeepSeek','https://chatgpt.com':'ChatGPT','https://gemini.google.com/app':'Gemini'};var%20hrefKeys=Object.keys(hrefs);var%20hrefIndex=0;frame.src=hrefKeys[hrefIndex];frame.style.position='fixed';frame.style.top='-1px';frame.style.right='0';frame.style.height='100%25';frame.style.width='450px';frame.style.border='1px%20solid%20#bbb';frame.style.background='#fff';frame.style.zIndex='100000';document.body.appendChild(frame);var%20resizeHandle=document.createElement('div');resizeHandle.id='resize-handle';var%20handleStyles={'width':'27px','height':'100%25','position':'fixed','top':'0','right':'450px','cursor':'ew-resize','z-index':'100001','background-color':'rgba(0,0,0,0)'};for(var%20style%20in%20handleStyles){resizeHandle.style.setProperty(style,handleStyles[style]);}document.body.appendChild(resizeHandle);var%20isResizing=false;var%20lastDownX=0;resizeHandle.addEventListener('mousedown',function(e){isResizing=true;lastDownX=e.clientX;});document.addEventListener('mousemove',function(e){if(!isResizing)return;var%20offsetRight=document.body.offsetWidth-(e.clientX-document.body.offsetLeft);frame.style.width=offsetRight+'px';resizeHandle.style.right=offsetRight+'px';updateButtonPositions();});document.addEventListener('mouseup',function(){isResizing=false;});var%20container=document.createElement('div');container.id='container';container.style.position='fixed';container.style.top='20px';container.style.zIndex='999999';container.style.display='flex';container.style.alignItems='center';var%20siteSelect=document.createElement('select');siteSelect.setAttribute('id','siteSelect');var%20selectStyles={'width':'62px','height':'30px','border-radius':'8px%200%200%208px','border':'2px%20solid%20#bbb','background-color':'#eee','font-size':'16px','text-align':'center','padding':'0%2010px','border-right':'1px%20solid%20#bbb','background-image':'none'};for(var%20style%20in%20selectStyles){siteSelect.style.setProperty(style,selectStyles[style]);}hrefKeys.forEach(function(href){var%20option=document.createElement('option');option.value=href;option.textContent=hrefs[href];siteSelect.appendChild(option);});siteSelect.onchange=function(){frame.src=siteSelect.value;};container.appendChild(siteSelect);var%20separator=document.createElement('div');separator.style.width='1px';separator.style.height='30px';separator.style.backgroundColor='#bbb';container.appendChild(separator);var%20closeButton=document.createElement('button');closeButton.setAttribute('id','sidebarClose');function%20removeAllElements(){document.querySelectorAll('#sidebarView,#container,#resize-handle,#clipboard-alert').forEach(function(i){if(i&&i.parentElement){i.parentElement.removeChild(i);}});}closeButton.onclick=removeAllElements;var%20closeButtonStyles={'all':'reset','width':'28px','height':'30px','border-radius':'0%208px%208px%200','border':'2px%20solid%20#bbb','border-left':'none','background-color':'#eee','text-align':'center','line-height':'26px','font-size':'16px'};for(var%20style%20in%20closeButtonStyles){closeButton.style.setProperty(style,closeButtonStyles[style]);}closeButton.innerText='%E2%9C%95';container.appendChild(closeButton);document.body.appendChild(container);function%20updateButtonPositions(){var%20iframeWidth=frame.offsetWidth;var%20containerWidth=container.offsetWidth;container.style.right=(iframeWidth/2-containerWidth/2)+'px';}updateButtonPositions();var%20lastEscTime=0;document.addEventListener('keydown',function(e){if(e.key==='Escape'){var%20currentTime=new%20Date().getTime();if(currentTime-lastEscTime%3C500){removeAllElements();lastEscTime=0;}else{lastEscTime=currentTime;}}});})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1747894428905,
+                "title": "───────────",
                 "icon": "https://logo.clearbit.com/separator.mayastudios.com",
                 "url": "https://separator.mayastudios.com/index.php?t=horz"
               }
@@ -725,46 +695,6 @@
               },
               {
                 "type": "link",
-                "title": "编辑当前页面",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:document.body.contentEditable%20=%20'true';%20document.designMode='on';%20void%200"
-              },
-              {
-                "type": "link",
-                "title": "解除右键限制",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(bookmarklets)%7Bfor(var%20i=0;i%3Cbookmarklets.length;i++)%7Bvar%20code=bookmarklets%5Bi%5D.url;if(code.indexOf(%22javascript:%22)!=-1)%7Bcode=code.replace(%22javascript:%22,%22%22);eval(code)%7Delse%7Bcode=code.replace(/%5Es+%7Cs+$/g,%22%22);if(code.length%3E0)%7Bwindow.open(code)%7D%7D%7D%7D)(%5B%7Btitle:%22%E7%A0%B4%E9%99%A4%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E9%99%90%E5%88%B6%22,url:%22javascript:function%20applyWin(a)%7Bif(typeof%20a.__nnANTImm__===%5Cx22undefined%5Cx22)%7Ba.__nnANTImm__=%7B%7D;a.__nnANTImm__.evts=%5B%5Cx22mousedown%5Cx22,%5Cx22mousemove%5Cx22,%5Cx22copy%5Cx22,%5Cx22contextmenu%5Cx22%5D;a.__nnANTImm__.initANTI=function()%7Ba.__nnantiflag__=true;a.__nnANTImm__.evts.forEach(function(c,b,d)%7Ba.addEventListener(c,this.fnANTI,true)%7D,a.__nnANTImm__)%7D;a.__nnANTImm__.clearANTI=function()%7Bdelete%20a.__nnantiflag__;a.__nnANTImm__.evts.forEach(function(c,b,d)%7Ba.removeEventListener(c,this.fnANTI,true)%7D,a.__nnANTImm__);delete%20a.__nnANTImm__%7D;a.__nnANTImm__.fnANTI=function(b)%7Bb.stopPropagation();return%20true%7D;a.addEventListener(%5Cx22unload%5Cx22,function(b)%7Ba.removeEventListener(%5Cx22unload%5Cx22,arguments.callee,false);if(a.__nnantiflag__===true)%7Ba.__nnANTImm__.clearANTI()%7D%7D,false)%7Da.__nnantiflag__===true?a.__nnANTImm__.clearANTI():a.__nnANTImm__.initANTI()%7DapplyWin(top);var%20fs=top.document.querySelectorAll(%5Cx22frame,%20iframe%5Cx22);for(var%20i=0,len=fs.length;i%3Clen;i++)%7Bvar%20win=fs%5Bi%5D.contentWindow;try%7Bwin.document%7Dcatch(ex)%7Bcontinue%7DapplyWin(fs%5Bi%5D.contentWindow)%7D;void%200;%22%7D,%7Btitle:%22%E7%A0%B4%E9%99%A4%E9%80%89%E6%8B%A9%E5%A4%8D%E5%88%B6%E9%99%90%E5%88%B6%22,url:%22javascript:(function()%7Bvar%20doc=document;var%20bd=doc.body;bd.onselectstart=bd.oncopy=bd.onpaste=bd.onkeydown=bd.oncontextmenu=bd.onmousemove=bd.onselectstart=bd.ondragstart=doc.onselectstart=doc.oncopy=doc.onpaste=doc.onkeydown=doc.oncontextmenu=null;doc.onselectstart=doc.oncontextmenu=doc.onmousedown=doc.onkeydown=function%20()%7Breturn%20true;%7D;with(document.wrappedJSObject%7C%7Cdocument)%7Bonmouseup=null;onmousedown=null;oncontextmenu=null;%7Dvar%20arAllElements=document.getElementsByTagName(%5Cx27*%5Cx27);for(var%20i=arAllElements.length-1;i%3E=0;i--)%7Bvar%20elmOne=arAllElements;with(elmOne.wrappedJSObject%7C%7CelmOne)%7Bonmouseup=null;onmousedown=null;%7D%7Dvar%20head=document.getElementsByTagName(%5Cx27head%5Cx27)%5B0%5D;if(head)%7Bvar%20style=document.createElement(%5Cx27style%5Cx27);style.type=%5Cx27text/css%5Cx27;style.innerHTML=%5Cx22html,*%7B-moz-user-select:auto!important;%7D%5Cx22;head.appendChild(style);%7Dvoid(0);%7D)();%22%7D%5D)"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "───────────",
-                "icon": "https://logo.clearbit.com/separator.mayastudios.com",
-                "url": "https://separator.mayastudios.com/index.php?t=horz"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "谷歌缓存查询",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:(function(){%20document.location.href='http://www.google.com/search?q=cache:%27+escape(document.location.href)%20})();"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "网站时光机",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:window.open('https://web.archive.org/web/*/'%20+%20unescape(location.href));void(0);"
-              },
-              {
-                "type": "link",
-                "addDate": 1542959072000,
-                "title": "储存当前网页",
-                "icon": "https://logo.clearbit.com/",
-                "url": "javascript:void(open('http://archive.today/?run=1&url=%27+encodeURIComponent(document.location)))"
-              },
-              {
-                "type": "link",
                 "addDate": 1542959072000,
                 "title": "───────────",
                 "icon": "https://logo.clearbit.com/separator.mayastudios.com",
@@ -845,6 +775,169 @@
               {
                 "type": "link",
                 "title": "─────────────",
+                "icon": "https://logo.clearbit.com/separator.mayastudios.com",
+                "url": "https://separator.mayastudios.com/index.php?t=horz"
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "addDate": 1609765000610,
+            "title": "工具",
+            "children": [
+              {
+                "type": "link",
+                "title": "随机打开网站",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var%20a=window,b=document,c=encodeURIComponent,d=a.open(%22http://www.stumbleupon.com/url/%22+b.location,'StumbleUpOn','location=1,status=1,scrollbars=1,resizable=1,alwaysRaised=1,width=800px,height=600px');a.setTimeout(function(){d.focus()},60)})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1727405664439,
+                "title": "网页临时记事本",
+                "icon": "https://logo.clearbit.com/",
+                "url": "data:text/html,<body contenteditable style=line-height:1.5;font-size:20px>"
+              },
+              {
+                "type": "link",
+                "addDate": 1679036383957,
+                "title": "🔍Crx搜搜",
+                "icon": "https://logo.clearbit.com/www.youxiaohou.com",
+                "url": "https://www.youxiaohou.com/tool/install-mactype.html"
+              },
+              {
+                "type": "link",
+                "addDate": 1597772874342,
+                "title": "采集到花瓣",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement(%27script%27),d.id=%27huaban_script%27,d.setAttribute(%27charset%27,%27utf-8%27),d.src=%27https://huaban.com/js/widgets.min.js?%27+Math.floor(+new%20Date/1e7),b.body.appendChild(d))})(window,document,%27HUABAN_GLOBAL%27);"
+              },
+              {
+                "type": "link",
+                "title": "查找网站RSS源",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:void(d=document);void(el=d.getElementsByTagName('link'));void(g=false);for(i=0;i<el.length;i++){if(el[i].getAttribute('rel').indexOf('alternate')!=-1){ty=el[i].getAttribute('type');if(ty.indexOf('application/rss+xml')!=-1||ty.indexOf('text/xml')!=-1){g=true;h=el[i].getAttribute('href');void(location.href='http://www.feedly.com/home#subscription/feed/'+h);}}};if(!g){window.alert('Could%20not%20find%20the%20RSS%20Feed');};"
+              },
+              {
+                "type": "link",
+                "addDate": 1542959072000,
+                "title": "网页另存为PDF",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:window.open('http://www.web2pdfconvert.com/engine?curl=%27%20+%20unescape(location.href));void(0);"
+              },
+              {
+                "type": "link",
+                "title": "WP一键留言",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){document.getElementById('author').value='%E5%AD%99%E5%AE%87%E5%8D%9A%E5%AE%A2';document.getElementById('email').value='972320721@qq.com';document.getElementById%20('url').value='sunyu.me';document.getElementById('comment').value='%E6%9D%A5%E5%8F%82%E8%A7%82%E4%B8%80%E4%B8%8B%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%9B%9E%E8%AE%BF';})()"
+              },
+              {
+                "type": "link",
+                "title": "弹出软键盘",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var%20st;st=document.createElement('script');st.charset='utf-8';st.src='https://mimace.sinaapp.com/tool/soft_keyboard/plugins/soft_keyboard.js';document.body.appendChild(st);})();"
+              },
+              {
+                "type": "link",
+                "title": "摧毁网站",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://erkie.github.com/asteroids.min.js';void(0);"
+              },
+              {
+                "type": "link",
+                "title": "网页地震",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(w,url,hasjq)%20{%20if%20(!(hasjq%20=%20w.jQuery))%20{%20var%20s%20=%20document.createElement('script');%20s.src%20=%20url;%20(document.getElementsByTagName('head')[0]%20||%20document.getElementsByTagName('body')[0]).appendChild(s);%20}%20(function%20go()%20{%20if%20(!w.jQuery)%20{%20return%20w.setTimeout(go,%20200);%20}%20var%20$%20=%20w.jQuery;%20if%20(!hasjq)%20$%20=%20$.noConflict();%20var%20$s%20=%20$('p,div,img,span,strong,em');%20(function%20shake()%20{%20$s.each(function()%20{%20if%20(this.shift)%20this.shift%20=%200;%20else%20this.shift%20=%20(2*(Math.floor(Math.random()%20*%202))%20-%201)%20*%20(Math.floor(Math.random()%20*%204));%20$(this).css('margin-left',%20this.shift);%20});%20w.setTimeout(shake,%2080);%20})();%20})();})(window,%20'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')"
+              },
+              {
+                "type": "link",
+                "title": "网站涂鸦",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:%20(function%20()%20{%20if%20(window.goggles%20&&%20window.goggles.active)%20{%20window.goggles.stop();%20}%20else%20{%20window.GOGGLE_SERVER='//dudl.us/page';%20var%20scr%20=%20document.createElement('script');%20scr.type%20=%20'text/javascript';%20scr.src%20=%20'//dudl.us/bookmarklet.js?rand=%27+Math.random();%20document.documentElement.appendChild(scr);%20}%20})();"
+              },
+              {
+                "type": "link",
+                "title": "显示当前时间",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:void((function(t){alert(t.toLocaleString()+'%20%E6%98%9F%E6%9C%9F'+(['%E5%A4%A9','%E4%B8%80','%E4%BA%8C','%E4%B8%89','%E5%9B%9B','%E4%BA%94','%E5%85%AD'])[t.getDay()])})(new%20Date()));"
+              },
+              {
+                "type": "link",
+                "title": "今年还剩多久?",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:tdy6Nb5=new%20Date();w2RtxZ=tdy6Nb5.getYear();tG82Nu=(w2RtxZ<2000)?w2RtxZ+1900:w2RtxZ;YbU7v3w=%27December%2031,%27+tG82Nu;var%20eY2FH9t=new%20Date(YbU7v3w);alert(%27Number%20of%20days%20left%20this%20year:%20%27+Math.round((eY2FH9t.getTime()-tdy6Nb5.getTime())/86400000))"
+              },
+              {
+                "type": "link",
+                "title": "查看浏览器UA",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:var%20x=navigator.userAgent;%20var%20y='%';%20for%20(var%20i=0;i<x.length;i++)%7B%20y+=x.charCodeAt(i).toString(16)+'%';%20%7D%20y=unescape(decodeURI(y.replace(/\\%$/,'')));%20alert(x+'\\n'+y);%20void(0);"
+              },
+              {
+                "type": "link",
+                "addDate": 1542959072000,
+                "title": "百度网盘提取码",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:require(['function-widget-1:share/util/service/createLinkShare.js']).prototype.makePrivatePassword=function(){return%20prompt('%E8%AF%B7%E8%BE%93%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AF%86%E7%A0%81','1234')}"
+              },
+              {
+                "type": "link",
+                "title": "购物·购物党",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var%20s%20=%20document.createElement('script');s.setAttribute('src','https://browser.gwdang.com/get.js?f=/js/gwdang_extension.js%27);document.body.appendChild(s);})();"
+              },
+              {
+                "type": "link",
+                "addDate": 1542959072000,
+                "title": "购物·如意淘",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:if(typeof%20yXzyxe58==typeof%20alert)yXzyxe58();(function(){var%20d=document,s=d.createElement('script'),h=d.getElementsByTagName('head')[0],t=new%20Date();s.src='http://ruyi.etao.com/extension/bookmarklet.js?t=%27+t.getFullYear()+t.getMonth()+t.getDate();s.charset=%27utf-8%27;if(h){h.appendChild(s);}})();"
+              },
+              {
+                "type": "link",
+                "title": "购物·惠惠购物",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){var%20s%20=%20document.createElement('script');s.charset%20=%20'UTF-8';s.setAttribute('src','https://shared-https.ydstatic.com/gouwuex/ext/script/extension_3_1.js');document.body.appendChild(s);})();"
+              },
+              {
+                "type": "link",
+                "title": "Emoji表情图标",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:var%20toggleEmojiBookmarklet=function(){var%20e=%22https://johannhof.github.io/emoji-helper/bookmarklet/%22,t=document.createElement(%22div%22),o=document.createElement(%22iframe%22);o.src=e,o.style.height=%22350px%22,o.style.width=%22510px%22,o.style.border=%221px%20solid%20lightgray%22,t.style.height=%22350px%22,t.style.width=%22510px%22,t.style.boxShadow=%222px%202px%2010px%20black%22,t.style.position=%22fixed%22,t.style.left=%22calc(50%%20-%20255px)%22,t.style.top=%2210%%22;var%20l=document.createElement(%22button%22);l.style.position=%22absolute%22,l.style.height=%2230px%22,l.style.width=%2230px%22,l.style.right=%22-15px%22,l.style.top=%22-15px%22,l.style.border=%225px%20solid%20white%22,l.style.borderRadius=%2220px%22,l.style.backgroundColor=%22white%22,l.style.boxShadow=%220px%200px%201px%20black%22,l.style.backgroundImage=%22url(%22+e+%22/img/emoji/heavy_multiplication_x.png)%22,l.style.backgroundRepeat=%22no-repeat%22,l.style.backgroundPosition=%22center%22,l.style.backgroundSize=%22contain%22,l.style.cursor=%22pointer%22,l.onclick=function(){t.parentNode.removeChild(t)},t.appendChild(l),t.appendChild(o),document.body.appendChild(t)};toggleEmojiBookmarklet();"
+              },
+              {
+                "type": "link",
+                "title": "万能命令书签",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){window.open(%22https://wn.run/f/#%22+document.location.href)})()"
+              },
+              {
+                "type": "link",
+                "title": "──────────",
+                "icon": "https://logo.clearbit.com/separator.mayastudios.com",
+                "url": "https://separator.mayastudios.com/index.php?t=horz"
+              },
+              {
+                "type": "link",
+                "title": "搜索共享帐号",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(function(){w=open(('http://www.bugmenot.com/view/'+encodeURIComponent(location.host)),'w','location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=500,height=400,modal=yes,dependent=yes');if(w){setTimeout('w.focus()',1000)}else{location='http://www.bugmenot.com/view/'+encodeURIComponent(location.host)}})();"
+              },
+              {
+                "type": "link",
+                "title": "──────────",
+                "icon": "https://logo.clearbit.com/separator.mayastudios.com",
+                "url": "https://separator.mayastudios.com/index.php?t=horz"
+              },
+              {
+                "type": "link",
+                "title": "年度进度条",
+                "icon": "https://logo.clearbit.com/",
+                "url": "javascript:(()=>{const%20dbNum=num=>num>9?num:%220%22+num,now=new%20Date,year=now.getFullYear(),month=dbNum(now.getMonth()+1),today=dbNum(now.getDate()),day=now.getDay(),hours=dbNum(now.getHours()),minutes=dbNum(now.getMinutes()),seconds=dbNum(now.getSeconds()),yearStart=new%20Date(year,0),yearEnd=new%20Date(year+1,0),progress=(100*(now-yearStart)/(yearEnd-yearStart)).toFixed(3);let%20progressbar=%22%22;for(let%20i=0;i%3C20;i++)progressbar+=5*i+2.5%3E=+progress?%22%E2%96%91%22:%22%E2%96%92%22;const%20dayNames=[%22Sunday%22,%22Monday%22,%22Tuesday%22,%22Wednesday%22,%22Thursday%22,%22Friday%22,%22Saturday%22],result=%22Now:%20%22+year+%22-%22+month+%22-%22+today+%22%20%22+hours+%22:%22+minutes+%22:%22+seconds+%22%20%22+dayNames[day]+%22\\nProgress:%20%22+progressbar+%22%20%22+progress+%22%%22;console.log(result);const%20copyinput=document.createElement(%22textarea%22);copyinput.value=result,document.body.appendChild(copyinput),copyinput.select();try{document.execCommand(%22copy%22),alert(result)}catch(err){}document.body.removeChild(copyinput);})()"
+              },
+              {
+                "type": "link",
+                "title": "──────────",
                 "icon": "https://logo.clearbit.com/separator.mayastudios.com",
                 "url": "https://separator.mayastudios.com/index.php?t=horz"
               }
@@ -1223,12 +1316,6 @@
                 "title": "谷歌搜索转英文",
                 "icon": "https://logo.clearbit.com/",
                 "url": "javascript:(function()%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_en%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()"
-              },
-              {
-                "type": "link",
-                "title": "───────────",
-                "icon": "https://logo.clearbit.com/separator.mayastudios.com",
-                "url": "https://separator.mayastudios.com/index.php?t=horz"
               },
               {
                 "type": "link",
@@ -4844,7 +4931,7 @@
               {
                 "type": "link",
                 "addDate": 1733111567697,
-                "title": "SearXNG in Space   0.61  0.3",
+                "title": "SearXNG in Space   0.61  0.3 版本更新快",
                 "icon": "https://logo.clearbit.com/search.im-in.space",
                 "url": "https://search.im-in.space/"
               },
@@ -13490,17 +13577,17 @@
           },
           {
             "type": "link",
-            "addDate": 1680762167822,
-            "title": "查看我的 IP 地址 | 查询本机 IP 地址及归属地 | 查看 DNS 出口 IP | 测试 CDN 命中节点 | Sukka | https://ip.skk.moe",
-            "icon": "https://logo.clearbit.com/ip.skk.moe",
-            "url": "https://ip.skk.moe/"
-          },
-          {
-            "type": "link",
             "addDate": 1721293049339,
             "title": "IPCheck.ing - 查看我的 IP 地址 - 查询本机 IP 地址及归属地 - 查看 WebRTC 连接 IP - DNS 泄露检测 - 网速测试 - Jason Ng 阿禅开源作品",
             "icon": "https://logo.clearbit.com/ip.con.sh",
             "url": "https://ip.con.sh/#/"
+          },
+          {
+            "type": "link",
+            "addDate": 1680762167822,
+            "title": "查看我的 IP 地址 | 查询本机 IP 地址及归属地 | 查看 DNS 出口 IP | 测试 CDN 命中节点 | Sukka | https://ip.skk.moe",
+            "icon": "https://logo.clearbit.com/ip.skk.moe",
+            "url": "https://ip.skk.moe/"
           },
           {
             "type": "link",
@@ -15340,6 +15427,13 @@
                 "title": "好用 所有音质都可解析 网易云音乐无损解析 - 高品质音乐下载工具",
                 "icon": "https://logo.clearbit.com/www.kanxizai.cn",
                 "url": "https://www.kanxizai.cn/163_music/"
+              },
+              {
+                "type": "link",
+                "addDate": 1747890023843,
+                "title": "菜鸡音乐 高音质 网易云源",
+                "icon": "https://logo.clearbit.com/music.ixcj.cn",
+                "url": "https://music.ixcj.cn/"
               }
             ]
           },
@@ -17328,6 +17422,13 @@
                 "title": "安逸影视导航 | 有安逸相伴 追剧更安逸",
                 "icon": "https://logo.clearbit.com/anee.cc",
                 "url": "https://anee.cc/"
+              },
+              {
+                "type": "link",
+                "addDate": 1747890862471,
+                "title": "发现TV - 聚合采集平台源 网页干净无广告 支持添加自定义采集API ",
+                "icon": "https://logo.clearbit.com/faxiantv.com",
+                "url": "https://faxiantv.com/"
               }
             ]
           },
@@ -20079,6 +20180,27 @@
                 "title": "苹果CMS影视资源采集站大全,实时更新影视资源采集网 - 苹果站",
                 "icon": "https://logo.clearbit.com/www.pgzhan.com",
                 "url": "https://www.pgzhan.com/gather/"
+              },
+              {
+                "type": "link",
+                "addDate": 1747890697940,
+                "title": "20250522 电影天堂资源 极速加载 无任何广告 超清1920 电影天堂资源备用网址: dyttzy1.tv dyttzy2.tv dyttzy3.tv dyttzy4.tv dyttzy5.tv",
+                "icon": "https://logo.clearbit.com/dyttzy.tv",
+                "url": "http://dyttzy.tv/"
+              },
+              {
+                "type": "link",
+                "addDate": 1747890744740,
+                "title": "20250522 电影天堂资源 极速加载 无任何广告 超清1920 电影天堂资源备用网址: dyttzy1.tv dyttzy2.tv dyttzy3.tv dyttzy4.tv dyttzy5.tv",
+                "icon": "https://logo.clearbit.com/dyttzy1.tv",
+                "url": "http://dyttzy1.tv/"
+              },
+              {
+                "type": "link",
+                "addDate": 1747890773367,
+                "title": "20250522 电影天堂资源 极速加载 无任何广告 超清1920 电影天堂资源备用网址: dyttzy1.tv dyttzy2.tv dyttzy3.tv dyttzy4.tv dyttzy5.tv",
+                "icon": "https://logo.clearbit.com/dyttzy3.tv",
+                "url": "http://dyttzy3.tv/"
               }
             ]
           },
@@ -26940,6 +27062,34 @@
                             "title": "애프리 노팬티 모음 > 움짤 > 후방주의 - 후방사진, 은꼴, 야짤, 움짤, BJ, 걸그룹 후방게시판 커뮤니티 입니다",
                             "icon": "https://logo.clearbit.com/hubang.org",
                             "url": "https://hubang.org/bbs/board.php?bo_table=GIF&wr_id=8737"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747888349534,
+                            "title": "“直面面包” BJ BJ收藏 抖胸合集",
+                            "icon": "https://logo.clearbit.com/etoland.co.kr",
+                            "url": "https://etoland.co.kr/bbs/board.php?bo_table=sgs_0609&wr_id=2116"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747891518308,
+                            "title": "无辜的“ E Cup”细长Kurita EMI（栗栗）",
+                            "icon": "https://logo.clearbit.com/etoland.co.kr",
+                            "url": "https://etoland.co.kr/bbs/board.php?bo_table=sgs_0609&wr_id=2130"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747900218471,
+                            "title": "巨乳BJ 乳摇 本地（？）“ L Cup”流媒体BJ Velvet.mp4",
+                            "icon": "https://logo.clearbit.com/etoland.co.kr",
+                            "url": "https://etoland.co.kr/bbs/board.php?bo_table=sgs_0609&wr_id=2111"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747900275980,
+                            "title": "自然的乳房认证将继续看到",
+                            "icon": "https://logo.clearbit.com/etoland.co.kr",
+                            "url": "https://etoland.co.kr/bbs/hgall.php?bo_table=etohumor07&wr_id=629232&sca=%BE%E0%C8%C4"
                           }
                         ]
                       },
@@ -27733,6 +27883,13 @@
                         "title": "bang365.top 同bangul24.top",
                         "icon": "https://logo.clearbit.com/bang365.top",
                         "url": "https://bang365.top/"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1747884986018,
+                        "title": "哦！我的女神",
+                        "icon": "https://logo.clearbit.com/etoland.co.kr",
+                        "url": "https://etoland.co.kr/bbs/board.php?bo_table=gravureforever"
                       }
                     ]
                   },
@@ -29091,6 +29248,34 @@
                         "title": "qXlFLA.gif hosted at Lensdump - Lensdump",
                         "icon": "https://logo.clearbit.com/lensdump.com",
                         "url": "https://lensdump.com/i/qXlFLA"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1747892035846,
+                        "title": "非常经典  【GIF】池田エライザ これはイッてるｗお宝オナニー＆胸揺れランウェイGIF画像 | GOSSIP!PHOTO-お宝画像&動画",
+                        "icon": "https://logo.clearbit.com/photo.gossip-i.com",
+                        "url": "http://photo.gossip-i.com/124421"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1747892261882,
+                        "title": "金松季歩　激イキ340回！痙攣5800回！イキ潮2900cc！ グラビア芸能人 金松季歩 エロス覚醒 はじめての大・痙・攣スペシャル　エロ画像33枚　エロGIF14枚 ｜ MENS LIFE",
+                        "icon": "https://logo.clearbit.com/www.gekiatsujpn.com",
+                        "url": "https://www.gekiatsujpn.com/archives/11274"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1747909485470,
+                        "title": "【GIF】AVよりヌケる着エロ以上AV未満の過激イメビの疑似セックスGIF画像 | GOSSIP!PHOTO-お宝画像&動画",
+                        "icon": "https://logo.clearbit.com/photo.gossip-i.com",
+                        "url": "http://photo.gossip-i.com/187332?q=s1&pid=187332&pin=1&gin=1&page-album=2#gpin1"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1747909500392,
+                        "title": "【GIF】AVよりヌケる着エロ以上AV未満の過激イメビの疑似セックスGIF画像 | GOSSIP!PHOTO-お宝画像&動画",
+                        "icon": "https://logo.clearbit.com/photo.gossip-i.com",
+                        "url": "http://photo.gossip-i.com/187332?q=s1"
                       }
                     ]
                   },
@@ -37208,7 +37393,7 @@
                       {
                         "type": "link",
                         "addDate": 1720869222758,
-                        "title": "GOSSIP!PHOTO-お宝画像&動画 | GOSSIP!PHOTO-お宝画像&動画",
+                        "title": "GOSSIP!PHOTO-お宝画像&動画 有GIF",
                         "icon": "https://logo.clearbit.com/photo.gossip-i.com",
                         "url": "http://photo.gossip-i.com/"
                       },
@@ -53249,13 +53434,6 @@
                           },
                           {
                             "type": "link",
-                            "addDate": 1746780398582,
-                            "title": "宫西光 VEC-700 Class Reunion Double Affair Sex I Met My First Girlfriend For The First Time In Over A Decade And Now I'm A Grown Woman And I've Been Sucking On Her Mature Body Over And Over Again Hikaru Miyanishi",
-                            "icon": "https://logo.clearbit.com/supjav.com",
-                            "url": "https://supjav.com/346689.html"
-                          },
-                          {
-                            "type": "link",
                             "addDate": 1746780455698,
                             "title": "BANK-204 Double Busty Beauty With Natural Pubic Hair In Outdoor Hot Spring",
                             "icon": "https://logo.clearbit.com/supjav.com",
@@ -53606,27 +53784,6 @@
                           },
                           {
                             "type": "link",
-                            "addDate": 1747391363578,
-                            "title": "PRED-770 新毕业生前地方电台播音员AV出道 三好佑香",
-                            "icon": "https://logo.clearbit.com/supjav.com",
-                            "url": "https://supjav.com/zh/348242.html"
-                          },
-                          {
-                            "type": "link",
-                            "addDate": 1747391365364,
-                            "title": "PRED-771 将昏倒的紬木老师抱回家…毫无防备的美腿与美貌让我忍不住勃起，直到天亮前不断在她体内射精。紬明里",
-                            "icon": "https://logo.clearbit.com/supjav.com",
-                            "url": "https://supjav.com/zh/348243.html"
-                          },
-                          {
-                            "type": "link",
-                            "addDate": 1747391367042,
-                            "title": "PRED-765 我的妻子重返大学后被戴绿帽的故事。",
-                            "icon": "https://logo.clearbit.com/supjav.com",
-                            "url": "https://supjav.com/zh/348240.html"
-                          },
-                          {
-                            "type": "link",
                             "addDate": 1747391368672,
                             "title": "PPPE-335 我女朋友的姐姐用她的巨乳和中出诱惑我 OK 相泽美优",
                             "icon": "https://logo.clearbit.com/supjav.com",
@@ -53722,6 +53879,104 @@
                             "title": "EBWH-229",
                             "icon": "https://logo.clearbit.com/supjav.com",
                             "url": "https://supjav.com/zh/349146.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747902861361,
+                            "title": "水端 + 若宫穗乃 [4K]MADM-200“你想射多少次都没关系……你想射多少次我都行”素人熟女夺走男人贞操25 ALL 2连贯中出原始镜头3套完整录音",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/347024.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909451318,
+                            "title": "[无码破解]JUR-323 满身大汗的已婚妇女用力摇动臀部，我甚至没有移动臀部就在她体内射精。椎名由奈",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/347338.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909456615,
+                            "title": "JUQ-925 汗ほとばしる人妻の圧倒的な腰振りで、僕は一度も腰を動かさずに中出ししてしまった。 沖宮那美 | JavDB 成人影片數據庫",
+                            "icon": "https://logo.clearbit.com/javdb.com",
+                            "url": "https://javdb.com/v/4DDp2E"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909459294,
+                            "title": "JUQ-466 汗ほとばしる人妻の圧倒的な腰振りで、僕は一度も腰を動かさずに中出ししてしまった。 藤かんな | JavDB 成人影片數據庫",
+                            "icon": "https://logo.clearbit.com/javdb.com",
+                            "url": "https://javdb.com/v/MmWDEJ"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909461532,
+                            "title": "JUL-824 汗ほとばしる人妻の圧倒的な腰振りで、僕は一度も腰を動かさずに中出ししてしまった。 愛弓りょう | JavDB 成人影片數據庫",
+                            "icon": "https://logo.clearbit.com/javdb.com",
+                            "url": "https://javdb.com/v/1v5nZ"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909464048,
+                            "title": "PBD-488 高潮发展部分强烈推力后退站立57场景",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/328969.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909466168,
+                            "title": "[无码破解]SOON-002 随时随地人妻飞机杯温泉之旅 水端麻美",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/349796.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909467776,
+                            "title": "[无码破解]APNS-363 现在，我收到了一张DVD，里面有我失踪的未婚夫被轮奸的视频……一个悲惨的乌龟，连续中出“我不能回到你身边……”水端麻美",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/326546.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909469656,
+                            "title": "[无码破解]AFTER-007 红龙的庆功宴。认真做爱情枕头生意！在店里享受到各种极致贴心的服务后，你一定会心动不已！ 穗乃若菜",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/340486.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909471636,
+                            "title": "[无码破解]CAWD-780 时隔8年再次见到穿制服的妻子…羞涩的身姿令我心动，回忆起青春岁月的恋爱和纯爱性爱，抛开无性关系 伊藤真雪",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/zh/326891.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909475388,
+                            "title": "[Reducing Mosaic]VEC-700 Class Reunion Double Affair Sex I Met My First Girlfriend For The First Time In Over A Decade And Now I'm A Grown Woman And I've Been Sucking On Her Mature Body Over And Over Again Hikaru Miyanishi",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/347913.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909477549,
+                            "title": "[Reducing Mosaic]SSNI-061 Eros Arousal 10 Big Tits X Orgasm In The Vagina Day Nannon",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/349781.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909479426,
+                            "title": "[Reducing Mosaic]IPX-532 I'm Okay With This Shot Because It's My Nomination God-matching Soap Lady Who Makes You Ejaculate Unlimitedly 11 Consecutive Excitement Ejaculation Kanano Yano",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/349771.html"
+                          },
+                          {
+                            "type": "link",
+                            "addDate": 1747909481982,
+                            "title": "[Reducing Mosaic]300MIUM-1209 [Super Erotic Horny Switch On] Rent The Beautiful Girl Momo-Chan As Your Girlfriend! We Completely Recorded The Whole Story Of How We Persuaded Her To Do Even The Erotic Acts That Are Normally Prohibited! After Enjoying A Date At The Amusement Park At Night, We Took Her To A Hotel Where We Had Secret Lover Sex! She Gets Super Horny With Just A Kiss And Melts Away! Enjoy Her Cute Sensitive Pink Nipples And Pudding And Protruding Peach Butt! A Large Amount Of Cum Is Ejaculated Into The Extremely Narrow Pussy Of A Beautiful Girl Who Twists Her Hips And Cums Over And Over Again! [Rental Girlfriend]",
+                            "icon": "https://logo.clearbit.com/supjav.com",
+                            "url": "https://supjav.com/349520.html"
                           }
                         ]
                       }
@@ -74654,6 +74909,13 @@
                         "title": "雨宮ひびき 同款人物列表 AV女優タイプ検索結果",
                         "icon": "https://logo.clearbit.com/www.okonomi-search.com",
                         "url": "https://www.okonomi-search.com/oknm-result.php?jyuku=-45&houman=70&sekkyoku=40&seijyun=40&hentai=-45"
+                      },
+                      {
+                        "type": "link",
+                        "addDate": 1709269653049,
+                        "title": "已登记 日菜々はのん Hihana Hanon - Supjav.com - Watch High Quality Exclusive Hihana Hanon Movies Online",
+                        "icon": "https://logo.clearbit.com/supjav.com",
+                        "url": "https://supjav.com/category/cast/hihana-hanon"
                       }
                     ]
                   },
@@ -75482,13 +75744,6 @@
                     "title": "加美杏奈 - Supjav.com - 免费独家高清加美杏奈成人视频",
                     "icon": "https://logo.clearbit.com/supjav.com",
                     "url": "https://supjav.com/zh/category/cast/kami-anna"
-                  },
-                  {
-                    "type": "link",
-                    "addDate": 1709269653049,
-                    "title": "日菜々はのん Hihana Hanon - Supjav.com - Watch High Quality Exclusive Hihana Hanon Movies Online",
-                    "icon": "https://logo.clearbit.com/supjav.com",
-                    "url": "https://supjav.com/category/cast/hihana-hanon"
                   },
                   {
                     "type": "link",
